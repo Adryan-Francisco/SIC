@@ -7,7 +7,7 @@ using TesteDDD.Domain.Entities;
 
 namespace TesteDDD.Domain.Repositories
 {
-     public interface ICategoriaRepository
+    public interface ICategoriaRepository
     {
         Task AddAsync(Categoria categoria);
         Task<IEnumerable<Categoria>> GetAllAsync();

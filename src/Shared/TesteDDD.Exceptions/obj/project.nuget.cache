@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "n61wR1Wl440=",
+  "dgSpecHash": "OQ3g/UKOdvA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Shared\\TesteDDD.Exceptions\\TesteDDD.Exceptions.csproj",
+  "projectFilePath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Exceptions\\TesteDDD.Exceptions.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.entityframeworkcore\\8.0.0\\microsoft.entityframeworkcore.8.0.0.nupkg.sha512",
     "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\8.0.0\\microsoft.entityframeworkcore.abstractions.8.0.0.nupkg.sha512",

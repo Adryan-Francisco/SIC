@@ -1,10 +1,12 @@
-﻿using System;
+﻿using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TesteDDD.Domain.Entities;
 using TesteDDD.Domain.Repositories;
+
 using TesteDDD.Infrastructure.Data;
 
 namespace TesteDDD.Infrastructure.Repositories
@@ -30,7 +32,7 @@ namespace TesteDDD.Infrastructure.Repositories
             return await _dbContext.Categorias.AsNoTracking().ToListAsync();
         }
 
-        public async Task<Produto?> GetByIdAsync(Guid id)
+        public async Task<Categoria?> GetByIdAsync(Guid id)
         {
             return await _dbContext.Categorias.FirstOrDefaultAsync(p => p.Id == id);
         }
@@ -46,7 +48,7 @@ namespace TesteDDD.Infrastructure.Repositories
             var categoria = await GetByIdAsync(id);
             if (categoria is null) return;
 
-            _dbContext..Remove(categoria);
+            _dbContext.Categorias.Remove(categoria);
             await _dbContext.SaveChangesAsync();
         }
     }

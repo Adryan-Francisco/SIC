@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj": {}
+    "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj": {
+    "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
         "projectName": "TesteDDD.Domain",
-        "projectPath": "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
+        "projectPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
         "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Backend\\TesteDDD.Domain\\obj\\",
+        "outputPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

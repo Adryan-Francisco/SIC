@@ -634,11 +634,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Shared\\TesteDDD.Exceptions\\TesteDDD.Exceptions.csproj",
+      "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Exceptions\\TesteDDD.Exceptions.csproj",
       "projectName": "TesteDDD.Exceptions",
-      "projectPath": "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Shared\\TesteDDD.Exceptions\\TesteDDD.Exceptions.csproj",
+      "projectPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Exceptions\\TesteDDD.Exceptions.csproj",
       "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Shared\\TesteDDD.Exceptions\\obj\\",
+      "outputPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Exceptions\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -659,14 +659,14 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj": {
-              "projectPath": "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj"
+            "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj": {
+              "projectPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj"
             },
-            "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj"
+            "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj"
             },
-            "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj": {
-              "projectPath": "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj"
+            "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj": {
+              "projectPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj"
             }
           }
         }

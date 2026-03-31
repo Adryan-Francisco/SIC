@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj": {}
+    "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj": {
+    "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
+        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
         "projectName": "TesteDDD.Communication",
-        "projectPath": "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
+        "projectPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
         "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\Desktop\\TesteDDD\\src\\Shared\\TesteDDD.Communication\\obj\\",
+        "outputPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

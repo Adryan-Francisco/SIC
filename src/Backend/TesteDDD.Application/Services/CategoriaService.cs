@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Dynamic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -9,11 +10,14 @@ using TesteDDD.Domain.Entities;
 using TesteDDD.Domain.Repositories;
 
 namespace TesteDDD.Application.Services;
+
 public interface ICategoriaService
 {
     Task<ResponseCategoriaJson> CreateAsync(RequestCategoriaJson request);
     Task<IEnumerable<ResponseCategoriaJson>> GetAllAsync();
-    // Adicione os métodos GetById, Update e Delete na interface...
+    Task<ResponseCategoriaJson> GetByIdAsync(Guid id);
+    Task<ResponseCategoriaJson> UpdateAsync(Guid id, RequestCategoriaJson request);
+    Task DeleteAsync(Guid id);
 }
 
 public class CategoriaService : ICategoriaService
@@ -25,15 +29,14 @@ public class CategoriaService : ICategoriaService
         _repository = repository;
     }
 
+
+    // ✅ CREATE
     public async Task<ResponseCategoriaJson> CreateAsync(RequestCategoriaJson request)
     {
-        // 1. Mapear Request para Entidade
         var categoria = new Categoria(request.Name, request.Descricao);
 
-        // 2. Persistir
         await _repository.AddAsync(categoria);
 
-        // 3. Retornar Response
         return new ResponseCategoriaJson
         {
             Id = categoria.Id,
@@ -42,6 +45,7 @@ public class CategoriaService : ICategoriaService
         };
     }
 
+    // ✅ GET ALL
     public async Task<IEnumerable<ResponseCategoriaJson>> GetAllAsync()
     {
         var categorias = await _repository.GetAllAsync();
@@ -54,5 +58,48 @@ public class CategoriaService : ICategoriaService
         });
     }
 
-    // Implemente os demais métodos (Update, Delete, GetById) seguindo essa lógica...
+    // ✅ GET BY ID
+    public async Task<ResponseCategoriaJson> GetByIdAsync(Guid id)
+    {
+        var categoria = await _repository.GetByIdAsync(id);
+
+        if (categoria == null)
+            throw new KeyNotFoundException($"Categoria com ID {id} não encontrada.");
+
+        return new ResponseCategoriaJson
+        {
+            Id = categoria.Id,
+            Name = categoria.Name,
+            Descricao = categoria.Descricao
+        };
+    }
+
+    public async Task<ResponseCategoriaJson> UpdateAsync(Guid id, RequestCategoriaJson request)
+    {
+        var categoria = await _repository.GetByIdAsync(id);
+
+        if (categoria == null)
+            throw new KeyNotFoundException($"Categoria com ID {id} não encontrada.");
+
+        categoria.Update(request.Name, request.Descricao);
+
+        await _repository.UpdateAsync(categoria);
+
+        return new ResponseCategoriaJson
+        {
+            Id = categoria.Id,
+            Name = categoria.Name,
+            Descricao = categoria.Descricao
+        };
+    }
+
+    public async Task DeleteAsync(Guid id)
+    {
+        var categoria = await _repository.GetByIdAsync(id);
+
+        if (categoria == null)
+            throw new KeyNotFoundException($"Categoria com ID {id} não encontrada.");
+
+        await _repository.DeleteAsync(id);
+    }
 }
