@@ -1,0 +1,11 @@
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\TesteDDD.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\TesteDDD.Domain.AssemblyInfoInputs.cache
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\TesteDDD.Domain.AssemblyInfo.cs
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\TesteDDD.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Domain\bin\Debug\net8.0\TesteDDD.Domain.deps.json
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Domain\bin\Debug\net8.0\TesteDDD.Domain.dll
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Domain\bin\Debug\net8.0\TesteDDD.Domain.pdb
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\TesteDDD.Domain.dll
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\refint\TesteDDD.Domain.dll
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\TesteDDD.Domain.pdb
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\ref\TesteDDD.Domain.dll

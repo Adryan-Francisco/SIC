@@ -1,0 +1,17 @@
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Application\obj\Debug\net8.0\TesteDDD.Application.csproj.AssemblyReference.cache
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Application\obj\Debug\net8.0\TesteDDD.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Application\obj\Debug\net8.0\TesteDDD.Application.AssemblyInfoInputs.cache
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Application\obj\Debug\net8.0\TesteDDD.Application.AssemblyInfo.cs
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Application\obj\Debug\net8.0\TesteDDD.Application.csproj.CoreCompileInputs.cache
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Application\bin\Debug\net8.0\TesteDDD.Application.deps.json
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Application\bin\Debug\net8.0\TesteDDD.Application.dll
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Application\bin\Debug\net8.0\TesteDDD.Application.pdb
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Application\bin\Debug\net8.0\TesteDDD.Communication.dll
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Application\bin\Debug\net8.0\TesteDDD.Domain.dll
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Application\bin\Debug\net8.0\TesteDDD.Communication.pdb
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Application\bin\Debug\net8.0\TesteDDD.Domain.pdb
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Application\obj\Debug\net8.0\TesteDDD.1881301F.Up2Date
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Application\obj\Debug\net8.0\TesteDDD.Application.dll
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Application\obj\Debug\net8.0\refint\TesteDDD.Application.dll
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Application\obj\Debug\net8.0\TesteDDD.Application.pdb
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Application\obj\Debug\net8.0\ref\TesteDDD.Application.dll

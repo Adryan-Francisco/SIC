@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Backend\TesteDDD.Application\TesteDDD.Application.csproj" />
+    <ProjectReference Include="..\..\Backend\TesteDDD.Infrastructure\TesteDDD.Infrastructure.csproj" />
+    <ProjectReference Include="..\TesteDDD.Communication\TesteDDD.Communication.csproj" />
+  </ItemGroup>
+
+</Project>

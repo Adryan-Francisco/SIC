@@ -1,0 +1,5 @@
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\TesteDDD.Exceptions.csproj.AssemblyReference.cache
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\TesteDDD.Exceptions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\TesteDDD.Exceptions.AssemblyInfoInputs.cache
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\TesteDDD.Exceptions.AssemblyInfo.cs
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\TesteDDD.Exceptions.csproj.CoreCompileInputs.cache

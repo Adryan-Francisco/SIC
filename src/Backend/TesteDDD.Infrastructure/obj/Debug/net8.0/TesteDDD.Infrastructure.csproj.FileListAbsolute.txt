@@ -1,0 +1,15 @@
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.csproj.AssemblyReference.cache
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.AssemblyInfoInputs.cache
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.AssemblyInfo.cs
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.csproj.CoreCompileInputs.cache
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Infrastructure.deps.json
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Infrastructure.dll
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Infrastructure.pdb
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Domain.dll
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Domain.pdb
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.B39FDB01.Up2Date
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.dll
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\refint\TesteDDD.Infrastructure.dll
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.pdb
+C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\ref\TesteDDD.Infrastructure.dll
