@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TesteDDD.Domain.Entities
+namespace TesteDDD.Domain.Entities.Categoria
 {
     public class Categoria
     {

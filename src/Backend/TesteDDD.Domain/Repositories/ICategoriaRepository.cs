@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TesteDDD.Domain.Entities;
+using TesteDDD.Domain.Entities.Categoria;
 
 namespace TesteDDD.Domain.Repositories
 {

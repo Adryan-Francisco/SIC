@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TesteDDD.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5e4a42e091f69a8cc27612116a44cded207dcd5a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55c9ccc59e6f6b8480edeb729498aba832b42011")]
 [assembly: System.Reflection.AssemblyProductAttribute("TesteDDD.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TesteDDD.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
