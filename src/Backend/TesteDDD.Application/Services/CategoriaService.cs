@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Dynamic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TesteDDD.Communication.Requests;
+﻿using TesteDDD.Communication.Requests;
 using TesteDDD.Communication.Responses;
 using TesteDDD.Domain.Entities;
 using TesteDDD.Domain.Repositories;
@@ -14,10 +8,10 @@ namespace TesteDDD.Application.Services;
 public interface ICategoriaService
 {
     Task<ResponseCategoriaJson> CreateAsync(RequestCategoriaJson request);
-    Task<IEnumerable<ResponseCategoriaJson>> GetAllAsync();
-    Task<ResponseCategoriaJson> GetByIdAsync(Guid id);
-    Task<ResponseCategoriaJson> UpdateAsync(Guid id, RequestCategoriaJson request);
-    Task DeleteAsync(Guid id);
+    Task<IList<ResponseCategoriaJson>> GetAllAsync();
+    Task<ResponseCategoriaJson?> GetByIdAsync(Guid id);
+    Task<ResponseCategoriaJson?> UpdateAsync(Guid id, RequestCategoriaJson request);
+    Task<bool> DeleteAsync(Guid id);
 }
 
 public class CategoriaService : ICategoriaService
@@ -29,8 +23,6 @@ public class CategoriaService : ICategoriaService
         _repository = repository;
     }
 
-
-    // ✅ CREATE
     public async Task<ResponseCategoriaJson> CreateAsync(RequestCategoriaJson request)
     {
         var categoria = new Categoria(request.Name, request.Descricao);
@@ -45,8 +37,7 @@ public class CategoriaService : ICategoriaService
         };
     }
 
-    // ✅ GET ALL
-    public async Task<IEnumerable<ResponseCategoriaJson>> GetAllAsync()
+    public async Task<IList<ResponseCategoriaJson>> GetAllAsync()
     {
         var categorias = await _repository.GetAllAsync();
 
@@ -55,16 +46,15 @@ public class CategoriaService : ICategoriaService
             Id = c.Id,
             Name = c.Name,
             Descricao = c.Descricao
-        });
+        }).ToList();
     }
 
-    // ✅ GET BY ID
-    public async Task<ResponseCategoriaJson> GetByIdAsync(Guid id)
+    public async Task<ResponseCategoriaJson?> GetByIdAsync(Guid id)
     {
         var categoria = await _repository.GetByIdAsync(id);
 
         if (categoria == null)
-            throw new KeyNotFoundException($"Categoria com ID {id} não encontrada.");
+            return null;
 
         return new ResponseCategoriaJson
         {
@@ -74,12 +64,12 @@ public class CategoriaService : ICategoriaService
         };
     }
 
-    public async Task<ResponseCategoriaJson> UpdateAsync(Guid id, RequestCategoriaJson request)
+    public async Task<ResponseCategoriaJson?> UpdateAsync(Guid id, RequestCategoriaJson request)
     {
         var categoria = await _repository.GetByIdAsync(id);
 
         if (categoria == null)
-            throw new KeyNotFoundException($"Categoria com ID {id} não encontrada.");
+            return null;
 
         categoria.Update(request.Name, request.Descricao);
 
@@ -93,13 +83,14 @@ public class CategoriaService : ICategoriaService
         };
     }
 
-    public async Task DeleteAsync(Guid id)
+    public async Task<bool> DeleteAsync(Guid id)
     {
         var categoria = await _repository.GetByIdAsync(id);
 
         if (categoria == null)
-            throw new KeyNotFoundException($"Categoria com ID {id} não encontrada.");
+            return false;
 
         await _repository.DeleteAsync(id);
+        return true;
     }
 }

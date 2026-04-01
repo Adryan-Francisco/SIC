@@ -29,5 +29,38 @@ public class CategoriaController : ControllerBase
         return Ok(response);
     }
 
-    // Endpoints de PUT e DELETE viriam aqui chamando o _productService...
+    [HttpGet("{id:guid}")]
+    public async Task<IActionResult> GetById([FromRoute] Guid id)
+    {
+        var response = await _categoriaService.GetByIdAsync(id);
+
+        if (response is null)
+            return NotFound(new { Message = $"Categoria com ID {id} não encontrada." });
+
+        return Ok(response);
+    }
+
+    [HttpPut("{id:guid}")]
+    public async Task<IActionResult> Update(
+        [FromRoute] Guid id,
+        [FromBody] RequestCategoriaJson request)
+    {
+        var response = await _categoriaService.UpdateAsync(id, request);
+
+        if (response is null)
+            return NotFound(new { Message = $"Categoria com ID {id} não encontrada." });
+
+        return Ok(response);
+    }
+
+    [HttpDelete("{id:guid}")]
+    public async Task<IActionResult> Delete([FromRoute] Guid id)
+    {
+        var deleted = await _categoriaService.DeleteAsync(id);
+
+        if (!deleted)
+            return NotFound(new { Message = $"Categoria com ID {id} não encontrada." });
+
+        return NoContent();
+    }
 }

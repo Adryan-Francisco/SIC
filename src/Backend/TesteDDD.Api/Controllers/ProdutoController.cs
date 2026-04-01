@@ -29,5 +29,41 @@ public class ProdutoController : ControllerBase
         return Ok(response);
     }
 
-    // Endpoints de PUT e DELETE viriam aqui chamando o _productService...
+    // ✅ Corrigido: long -> Guid
+    [HttpGet("{id:guid}")]
+    public async Task<IActionResult> GetById([FromRoute] Guid id)
+    {
+        var response = await _produtoService.GetByIdAsync(id);
+
+        if (response is null)
+            return NotFound(new { Message = $"Produto com ID {id} não encontrado." });
+
+        return Ok(response);
+    }
+
+    // ✅ Corrigido: long -> Guid
+    [HttpPut("{id:guid}")]
+    public async Task<IActionResult> Update(
+        [FromRoute] Guid id,
+        [FromBody] RequestProdutoJson request)
+    {
+        var response = await _produtoService.UpdateAsync(id, request);
+
+        if (response is null)
+            return NotFound(new { Message = $"Produto com ID {id} não encontrado." });
+
+        return Ok(response);
+    }
+
+    // ✅ Corrigido: long -> Guid
+    [HttpDelete("{id:guid}")]
+    public async Task<IActionResult> Delete([FromRoute] Guid id)
+    {
+        var deleted = await _produtoService.DeleteAsync(id);
+
+        if (!deleted)
+            return NotFound(new { Message = $"Produto com ID {id} não encontrado." });
+
+        return NoContent();
+    }
 }

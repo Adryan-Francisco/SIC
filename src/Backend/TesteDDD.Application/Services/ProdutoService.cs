@@ -8,8 +8,10 @@ namespace TesteDDD.Application.Services;
 public interface IProdutoService
 {
     Task<ResponseProdutoJson> CreateAsync(RequestProdutoJson request);
-    Task<IEnumerable<ResponseProdutoJson>> GetAllAsync();
-    // Adicione os métodos GetById, Update e Delete na interface...
+    Task<IList<ResponseProdutoJson>> GetAllAsync();
+    Task<ResponseProdutoJson?> GetByIdAsync(Guid id);
+    Task<ResponseProdutoJson?> UpdateAsync(Guid id, RequestProdutoJson request);
+    Task<bool> DeleteAsync(Guid id);
 }
 
 public class ProdutoService : IProdutoService
@@ -23,13 +25,10 @@ public class ProdutoService : IProdutoService
 
     public async Task<ResponseProdutoJson> CreateAsync(RequestProdutoJson request)
     {
-        // 1. Mapear Request para Entidade
         var produto = new Produto(request.Nome, request.Preco);
 
-        // 2. Persistir
         await _repository.AddAsync(produto);
 
-        // 3. Retornar Response
         return new ResponseProdutoJson
         {
             Id = produto.Id,
@@ -38,7 +37,7 @@ public class ProdutoService : IProdutoService
         };
     }
 
-    public async Task<IEnumerable<ResponseProdutoJson>> GetAllAsync()
+    public async Task<IList<ResponseProdutoJson>> GetAllAsync()
     {
         var products = await _repository.GetAllAsync();
 
@@ -47,8 +46,51 @@ public class ProdutoService : IProdutoService
             Id = p.Id,
             Nome = p.Nome,
             Preco = p.Preco
-        });
+        }).ToList();
     }
 
-    // Implemente os demais métodos (Update, Delete, GetById) seguindo essa lógica...
+    public async Task<ResponseProdutoJson?> GetByIdAsync(Guid id)
+    {
+        var produto = await _repository.GetByIdAsync(id);
+
+        if (produto == null)
+            return null;
+
+        return new ResponseProdutoJson
+        {
+            Id = produto.Id,
+            Nome = produto.Nome,
+            Preco = produto.Preco
+        };
+    }
+
+    public async Task<ResponseProdutoJson?> UpdateAsync(Guid id, RequestProdutoJson request)
+    {
+        var produto = await _repository.GetByIdAsync(id);
+
+        if (produto == null)
+            return null;
+
+        produto.Update(request.Nome, request.Preco);
+
+        await _repository.UpdateAsync(produto);
+
+        return new ResponseProdutoJson
+        {
+            Id = produto.Id,
+            Nome = produto.Nome,
+            Preco = produto.Preco
+        };
+    }
+
+    public async Task<bool> DeleteAsync(Guid id)
+    {
+        var produto = await _repository.GetByIdAsync(id);
+
+        if (produto == null)
+            return false;
+
+        await _repository.DeleteAsync(id);
+        return true;
+    }
 }
