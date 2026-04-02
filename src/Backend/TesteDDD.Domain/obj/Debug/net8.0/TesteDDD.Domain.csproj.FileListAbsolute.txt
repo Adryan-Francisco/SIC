@@ -21,3 +21,15 @@ C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\TesteDDD
 C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\refint\TesteDDD.Domain.dll
 C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\TesteDDD.Domain.pdb
 C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\ref\TesteDDD.Domain.dll
+C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Domain\bin\Debug\net8.0\TesteDDD.Domain.deps.json
+C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Domain\bin\Debug\net8.0\TesteDDD.Domain.dll
+C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Domain\bin\Debug\net8.0\TesteDDD.Domain.pdb
+C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\TesteDDD.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\TesteDDD.Domain.AssemblyInfoInputs.cache
+C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\TesteDDD.Domain.AssemblyInfo.cs
+C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\TesteDDD.Domain.csproj.CoreCompileInputs.cache
+C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\TesteDDD.Domain.sourcelink.json
+C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\TesteDDD.Domain.dll
+C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\refint\TesteDDD.Domain.dll
+C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\TesteDDD.Domain.pdb
+C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Domain\obj\Debug\net8.0\ref\TesteDDD.Domain.dll

@@ -14,4 +14,13 @@ public class AppDbContext : DbContext
     public DbSet<Categoria> Categorias { get; set; }
 
     public DbSet<Cliente> Clientes { get; set; }
+
+    protected override void OnModelCreating(ModelBuilder modelBuilder)
+    {
+        modelBuilder.Entity<Produto>()
+            .Property(p => p.Preco)
+            .HasPrecision(18, 2);
+
+        base.OnModelCreating(modelBuilder);
+    }
 }

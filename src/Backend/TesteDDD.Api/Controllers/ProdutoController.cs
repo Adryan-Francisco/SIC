@@ -19,7 +19,7 @@ public class ProdutoController : ControllerBase
     public async Task<IActionResult> Create([FromBody] RequestProdutoJson request)
     {
         var response = await _produtoService.CreateAsync(request);
-        return Created(string.Empty, response);
+        return CreatedAtAction(nameof(GetById), new { id = response.Id }, response);
     }
 
     [HttpGet]

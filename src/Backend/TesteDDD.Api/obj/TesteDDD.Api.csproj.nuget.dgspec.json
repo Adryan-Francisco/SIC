@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj": {}
+    "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj": {
+    "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj",
+        "projectUniqueName": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj",
         "projectName": "TesteDDD.Api",
-        "projectPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj",
-        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Api\\obj\\",
+        "projectPath": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj",
+        "packagesPath": "C:\\Users\\adrya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Api\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adrya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,20 +26,21 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj": {
-                "projectPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj"
+              "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj": {
+                "projectPath": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj"
               },
-              "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj": {
-                "projectPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj"
+              "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj"
               },
-              "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj": {
-                "projectPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj"
+              "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj": {
+                "projectPath": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj"
               }
             }
           }
@@ -54,12 +55,22 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.6.2, )"
@@ -76,24 +87,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[8.0.25, 8.0.25]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -102,24 +95,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj": {
+    "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj",
+        "projectUniqueName": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj",
         "projectName": "TesteDDD.Application",
-        "projectPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj",
-        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application\\obj\\",
+        "projectPath": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj",
+        "packagesPath": "C:\\Users\\adrya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Application\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adrya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -128,17 +121,18 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj": {
-                "projectPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj"
+              "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj": {
+                "projectPath": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj"
               },
-              "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj": {
-                "projectPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj"
+              "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj": {
+                "projectPath": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj"
               }
             }
           }
@@ -153,7 +147,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -169,43 +163,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj": {
+    "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
         "projectName": "TesteDDD.Domain",
-        "projectPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
-        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\obj\\",
+        "projectPath": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
+        "packagesPath": "C:\\Users\\adrya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adrya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -214,6 +194,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -232,7 +213,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -248,43 +229,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj": {
+    "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj",
         "projectName": "TesteDDD.Infrastructure",
-        "projectPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\obj\\",
+        "projectPath": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\adrya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adrya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -293,14 +260,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj": {
-                "projectPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj"
+              "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj": {
+                "projectPath": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj"
               }
             }
           }
@@ -315,13 +283,21 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.Relational": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.0, )"
             }
@@ -337,43 +313,29 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj": {
+    "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
+        "projectUniqueName": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
         "projectName": "TesteDDD.Communication",
-        "projectPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
-        "packagesPath": "C:\\Users\\Aluno\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\obj\\",
+        "projectPath": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
+        "packagesPath": "C:\\Users\\adrya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Aluno\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adrya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -382,6 +344,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -400,7 +363,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -416,26 +379,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.AspNetCore.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
-            },
-            {
-              "name": "Microsoft.NETCore.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
-            },
-            {
-              "name": "Microsoft.WindowsDesktop.App.Ref",
-              "version": "[8.0.25, 8.0.25]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

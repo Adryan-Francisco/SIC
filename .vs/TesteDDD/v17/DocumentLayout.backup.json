@@ -1,58 +1,102 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\",
+  "WorkspaceRootPath": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D33A1C3C-F6CB-4719-8C5D-7AB69CF37E7E}|src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj|c:\\users\\maciel\\desktop\\front end\\adryan\\testeddd\\src\\backend\\testeddd.api\\testeddd.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{D33A1C3C-F6CB-4719-8C5D-7AB69CF37E7E}|src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj|solutionrelative:src\\backend\\testeddd.api\\testeddd.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|solutionrelative:src\\backend\\testeddd.domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|c:\\users\\maciel\\desktop\\front end\\adryan\\testeddd\\src\\backend\\testeddd.application\\services\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|solutionrelative:src\\backend\\testeddd.application\\services\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.infrastructure\\repositories\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|solutionrelative:src\\backend\\testeddd.infrastructure\\repositories\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CB20D58-C2D5-4556-B5EC-A55F739D9904}|src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj|c:\\users\\maciel\\desktop\\front end\\adryan\\testeddd\\src\\shared\\testeddd.communication\\requests\\requestprodutojson.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CB20D58-C2D5-4556-B5EC-A55F739D9904}|src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj|solutionrelative:src\\shared\\testeddd.communication\\requests\\requestprodutojson.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.application\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|solutionrelative:src\\backend\\testeddd.application\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CB20D58-C2D5-4556-B5EC-A55F739D9904}|src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj|c:\\users\\maciel\\desktop\\front end\\adryan\\testeddd\\src\\shared\\testeddd.communication\\testeddd.communication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{7CB20D58-C2D5-4556-B5EC-A55F739D9904}|src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj|solutionrelative:src\\shared\\testeddd.communication\\testeddd.communication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{D33A1C3C-F6CB-4719-8C5D-7AB69CF37E7E}|src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D33A1C3C-F6CB-4719-8C5D-7AB69CF37E7E}|src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj|solutionrelative:src\\backend\\testeddd.api\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|c:\\users\\maciel\\desktop\\front end\\adryan\\testeddd\\src\\backend\\testeddd.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|solutionrelative:src\\backend\\testeddd.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.application\\services\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|solutionrelative:src\\backend\\testeddd.application\\services\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|c:\\users\\maciel\\desktop\\front end\\adryan\\testeddd\\src\\backend\\testeddd.domain\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|solutionrelative:src\\backend\\testeddd.domain\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|c:\\users\\maciel\\desktop\\front end\\adryan\\testeddd\\src\\backend\\testeddd.domain\\repositories\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|solutionrelative:src\\backend\\testeddd.domain\\repositories\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|c:\\users\\maciel\\desktop\\front end\\adryan\\testeddd\\src\\backend\\testeddd.application\\testeddd.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.application\\testeddd.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|solutionrelative:src\\backend\\testeddd.application\\testeddd.application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|c:\\users\\maciel\\desktop\\front end\\adryan\\testeddd\\src\\backend\\testeddd.domain\\testeddd.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|solutionrelative:src\\backend\\testeddd.domain\\testeddd.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.infrastructure\\testeddd.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|solutionrelative:src\\backend\\testeddd.infrastructure\\testeddd.infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D33A1C3C-F6CB-4719-8C5D-7AB69CF37E7E}|src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj|c:\\users\\maciel\\desktop\\front end\\adryan\\testeddd\\src\\backend\\testeddd.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.infrastructure\\repositories\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|solutionrelative:src\\backend\\testeddd.infrastructure\\repositories\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D33A1C3C-F6CB-4719-8C5D-7AB69CF37E7E}|src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D33A1C3C-F6CB-4719-8C5D-7AB69CF37E7E}|src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj|solutionrelative:src\\backend\\testeddd.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D33A1C3C-F6CB-4719-8C5D-7AB69CF37E7E}|src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj|c:\\users\\maciel\\desktop\\front end\\adryan\\testeddd\\src\\backend\\testeddd.api\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D33A1C3C-F6CB-4719-8C5D-7AB69CF37E7E}|src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj|solutionrelative:src\\backend\\testeddd.api\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.application\\services\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|solutionrelative:src\\backend\\testeddd.application\\services\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|c:\\users\\maciel\\desktop\\front end\\adryan\\testeddd\\src\\backend\\testeddd.infrastructure\\repositories\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.domain\\repositories\\icategoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|solutionrelative:src\\backend\\testeddd.domain\\repositories\\icategoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CB20D58-C2D5-4556-B5EC-A55F739D9904}|src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\shared\\testeddd.communication\\requests\\requestcategoriajson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CB20D58-C2D5-4556-B5EC-A55F739D9904}|src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj|solutionrelative:src\\shared\\testeddd.communication\\requests\\requestcategoriajson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.domain\\repositories\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|solutionrelative:src\\backend\\testeddd.domain\\repositories\\iprodutorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|solutionrelative:src\\backend\\testeddd.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.infrastructure\\repositories\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|solutionrelative:src\\backend\\testeddd.infrastructure\\repositories\\produtorepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7CB20D58-C2D5-4556-B5EC-A55F739D9904}|src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj|c:\\users\\maciel\\desktop\\front end\\adryan\\testeddd\\src\\shared\\testeddd.communication\\responses\\responseprodutojson.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7CB20D58-C2D5-4556-B5EC-A55F739D9904}|src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj|solutionrelative:src\\shared\\testeddd.communication\\responses\\responseprodutojson.cs.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7CB20D58-C2D5-4556-B5EC-A55F739D9904}|src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\shared\\testeddd.communication\\responses\\responsecategoriajson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CB20D58-C2D5-4556-B5EC-A55F739D9904}|src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj|solutionrelative:src\\shared\\testeddd.communication\\responses\\responsecategoriajson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CB20D58-C2D5-4556-B5EC-A55F739D9904}|src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\shared\\testeddd.communication\\responses\\responseprodutojson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CB20D58-C2D5-4556-B5EC-A55F739D9904}|src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj|solutionrelative:src\\shared\\testeddd.communication\\responses\\responseprodutojson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CB20D58-C2D5-4556-B5EC-A55F739D9904}|src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\shared\\testeddd.communication\\requests\\requestprodutojson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7CB20D58-C2D5-4556-B5EC-A55F739D9904}|src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj|solutionrelative:src\\shared\\testeddd.communication\\requests\\requestprodutojson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.domain\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|solutionrelative:src\\backend\\testeddd.domain\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.domain\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|solutionrelative:src\\backend\\testeddd.domain\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D33A1C3C-F6CB-4719-8C5D-7AB69CF37E7E}|src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.api\\testeddd.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D33A1C3C-F6CB-4719-8C5D-7AB69CF37E7E}|src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj|solutionrelative:src\\backend\\testeddd.api\\testeddd.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7CB20D58-C2D5-4556-B5EC-A55F739D9904}|src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\shared\\testeddd.communication\\testeddd.communication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{7CB20D58-C2D5-4556-B5EC-A55F739D9904}|src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj|solutionrelative:src\\shared\\testeddd.communication\\testeddd.communication.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.domain\\testeddd.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|solutionrelative:src\\backend\\testeddd.domain\\testeddd.domain.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D33A1C3C-F6CB-4719-8C5D-7AB69CF37E7E}|src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj|c:\\users\\adrya\\documents\\projetos\\sic\\src\\backend\\testeddd.api\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D33A1C3C-F6CB-4719-8C5D-7AB69CF37E7E}|src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj|solutionrelative:src\\backend\\testeddd.api\\controllers\\produtocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,8 +106,16 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 6,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
@@ -81,79 +133,253 @@
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\Entities\\Cliente.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Domain\\Entities\\Cliente.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\Entities\\Cliente.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Domain\\Entities\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T23:32:23.486Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TesteDDD.Api",
-              "DocumentMoniker": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj",
-              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj",
-              "ToolTip": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj",
-              "RelativeToolTip": "src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj",
+              "DocumentIndex": 1,
+              "Title": "ClienteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\Repositories\\ClienteRepository.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Infrastructure\\Repositories\\ClienteRepository.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\Repositories\\ClienteRepository.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Infrastructure\\Repositories\\ClienteRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-31T11:49:40.907Z",
-              "EditorCaption": ""
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T23:32:15.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Application\\Services\\ClienteService.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Application\\Services\\ClienteService.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Application\\Services\\ClienteService.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Application\\Services\\ClienteService.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAASwBsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T23:31:32.539Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Api\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Api\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Api\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Api\\Controllers\\ClienteController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAIwD4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T23:31:11.329Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Infrastructure\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Infrastructure\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Infrastructure\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "src\\Backend\\TesteDDD.Infrastructure\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Title": "CategoriaService.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Application\\Services\\CategoriaService.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Application\\Services\\CategoriaService.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Application\\Services\\CategoriaService.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Application\\Services\\CategoriaService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAA1wCIAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T13:51:49.567Z"
+              "WhenOpened": "2026-03-31T12:58:58.003Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TesteDDD.Infrastructure.csproj",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-31T12:53:16.947Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "TesteDDD.Application.csproj",
-              "DocumentMoniker": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj",
-              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj",
-              "ToolTip": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj",
-              "RelativeToolTip": "src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-30T13:43:13.365Z",
-              "EditorCaption": ""
+              "Title": "CategoriaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\Repositories\\CategoriaRepository.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Infrastructure\\Repositories\\CategoriaRepository.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\Repositories\\CategoriaRepository.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Infrastructure\\Repositories\\CategoriaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T12:46:44.939Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TesteDDD.Domain.csproj",
-              "DocumentMoniker": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
-              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
-              "ToolTip": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
-              "RelativeToolTip": "src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-30T13:43:01.694Z",
-              "EditorCaption": ""
+              "DocumentIndex": 10,
+              "Title": "ICategoriaRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\Repositories\\ICategoriaRepository.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Domain\\Repositories\\ICategoriaRepository.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\Repositories\\ICategoriaRepository.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Domain\\Repositories\\ICategoriaRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T12:43:49.938Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "ProdutoService.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Application\\Services\\ProdutoService.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Application\\Services\\ProdutoService.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Application\\Services\\ProdutoService.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Application\\Services\\ProdutoService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T13:28:37.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RequestCategoriaJson.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication\\Requests\\RequestCategoriaJson.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\TesteDDD.Communication\\Requests\\RequestCategoriaJson.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication\\Requests\\RequestCategoriaJson.cs",
+              "RelativeToolTip": "src\\Shared\\TesteDDD.Communication\\Requests\\RequestCategoriaJson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T12:53:55.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Api\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Api\\Program.cs",
               "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Api\\Program.cs",
-              "ToolTip": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Api\\Program.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Api\\Program.cs",
               "RelativeToolTip": "src\\Backend\\TesteDDD.Api\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-30T13:36:26.711Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
+              "Title": "TesteDDD.Application.csproj",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-30T13:43:13.365Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IProdutoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\Repositories\\IProdutoRepository.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Domain\\Repositories\\IProdutoRepository.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\Repositories\\IProdutoRepository.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Domain\\Repositories\\IProdutoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T13:22:40.693Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Infrastructure\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Infrastructure\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T13:51:49.567Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "ProdutoRepository.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\Repositories\\ProdutoRepository.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Infrastructure\\Repositories\\ProdutoRepository.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\Repositories\\ProdutoRepository.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Infrastructure\\Repositories\\ProdutoRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T13:32:47.14Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ResponseCategoriaJson.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication\\Responses\\ResponseCategoriaJson.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\TesteDDD.Communication\\Responses\\ResponseCategoriaJson.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication\\Responses\\ResponseCategoriaJson.cs",
+              "RelativeToolTip": "src\\Shared\\TesteDDD.Communication\\Responses\\ResponseCategoriaJson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T12:56:31.516Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ResponseProdutoJson.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication\\Responses\\ResponseProdutoJson.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\TesteDDD.Communication\\Responses\\ResponseProdutoJson.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication\\Responses\\ResponseProdutoJson.cs",
+              "RelativeToolTip": "src\\Shared\\TesteDDD.Communication\\Responses\\ResponseProdutoJson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T13:27:37.032Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\Entities\\Produto.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Domain\\Entities\\Produto.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\Entities\\Produto.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Domain\\Entities\\Produto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T13:16:49.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RequestProdutoJson.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication\\Requests\\RequestProdutoJson.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\TesteDDD.Communication\\Requests\\RequestProdutoJson.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication\\Requests\\RequestProdutoJson.cs",
+              "RelativeToolTip": "src\\Shared\\TesteDDD.Communication\\Requests\\RequestProdutoJson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-30T13:26:40.835Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\Entities\\Categoria.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Domain\\Entities\\Categoria.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\Entities\\Categoria.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Domain\\Entities\\Categoria.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T12:28:22.313Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "ProdutoController.cs",
-              "DocumentMoniker": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Api\\Controllers\\ProdutoController.cs",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Api\\Controllers\\ProdutoController.cs",
               "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Api\\Controllers\\ProdutoController.cs",
-              "ToolTip": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Api\\Controllers\\ProdutoController.cs",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Api\\Controllers\\ProdutoController.cs",
               "RelativeToolTip": "src\\Backend\\TesteDDD.Api\\Controllers\\ProdutoController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -161,89 +387,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProdutoService.cs",
-              "DocumentMoniker": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Application\\Services\\ProdutoService.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Application\\Services\\ProdutoService.cs",
-              "ToolTip": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Application\\Services\\ProdutoService.cs",
-              "RelativeToolTip": "src\\Backend\\TesteDDD.Application\\Services\\ProdutoService.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAqwAUAAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T13:28:37.889Z",
-              "EditorCaption": ""
+              "DocumentIndex": 22,
+              "Title": "TesteDDD.Domain.csproj",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-30T13:43:01.694Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Domain\\Entities\\Produto.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Domain\\Entities\\Produto.cs",
-              "ToolTip": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Domain\\Entities\\Produto.cs",
-              "RelativeToolTip": "src\\Backend\\TesteDDD.Domain\\Entities\\Produto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T13:16:49.887Z"
+              "DocumentIndex": 20,
+              "Title": "TesteDDD.Api.csproj",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-31T11:49:40.907Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 21,
               "Title": "TesteDDD.Communication.csproj",
-              "DocumentMoniker": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
+              "DocumentMoniker": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
               "RelativeDocumentMoniker": "src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
-              "ToolTip": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
+              "ToolTip": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
               "RelativeToolTip": "src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-30T13:26:13.819Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "RequestProdutoJson.cs.cs",
-              "DocumentMoniker": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Shared\\TesteDDD.Communication\\Requests\\RequestProdutoJson.cs.cs",
-              "RelativeDocumentMoniker": "src\\Shared\\TesteDDD.Communication\\Requests\\RequestProdutoJson.cs.cs",
-              "ToolTip": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Shared\\TesteDDD.Communication\\Requests\\RequestProdutoJson.cs.cs",
-              "RelativeToolTip": "src\\Shared\\TesteDDD.Communication\\Requests\\RequestProdutoJson.cs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAALAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T13:26:40.835Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ProdutoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Infrastructure\\Repositories\\ProdutoRepository.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Infrastructure\\Repositories\\ProdutoRepository.cs",
-              "ToolTip": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Infrastructure\\Repositories\\ProdutoRepository.cs",
-              "RelativeToolTip": "src\\Backend\\TesteDDD.Infrastructure\\Repositories\\ProdutoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T13:32:47.14Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ResponseProdutoJson.cs.cs",
-              "DocumentMoniker": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Shared\\TesteDDD.Communication\\Responses\\ResponseProdutoJson.cs.cs",
-              "RelativeDocumentMoniker": "src\\Shared\\TesteDDD.Communication\\Responses\\ResponseProdutoJson.cs.cs",
-              "ToolTip": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Shared\\TesteDDD.Communication\\Responses\\ResponseProdutoJson.cs.cs",
-              "RelativeToolTip": "src\\Shared\\TesteDDD.Communication\\Responses\\ResponseProdutoJson.cs.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T13:27:37.032Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "IProdutoRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Domain\\Repositories\\IProdutoRepository.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Domain\\Repositories\\IProdutoRepository.cs",
-              "ToolTip": "C:\\Users\\Maciel\\Desktop\\Front end\\Adryan\\TesteDDD\\src\\Backend\\TesteDDD.Domain\\Repositories\\IProdutoRepository.cs",
-              "RelativeToolTip": "src\\Backend\\TesteDDD.Domain\\Repositories\\IProdutoRepository.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-30T13:22:40.693Z"
+              "WhenOpened": "2026-03-30T13:26:13.819Z"
             }
           ]
         }

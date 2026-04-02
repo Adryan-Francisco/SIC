@@ -11,9 +11,9 @@ namespace TesteDDD.Domain.Entities
         public Guid Id { get; set; }
         public string Nome { get; set; } = string.Empty;
         
-        public string Endereco { get; set; } 
+        public string Endereco { get; set; } = string.Empty;
 
-        public string Cep {get; set; }
+        public string Cep { get; set; } = string.Empty;
 
         protected Cliente () { }
 

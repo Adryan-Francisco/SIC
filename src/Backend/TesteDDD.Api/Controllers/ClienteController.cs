@@ -2,6 +2,9 @@
 using TesteDDD.Application.Services;
 using TesteDDD.Communication.Requests;
 
+namespace TesteDDD.Api.Controllers;
+
+[Route("api/[controller]")]
 [ApiController]
 public class ClienteController : ControllerBase
 {
@@ -16,7 +19,7 @@ public class ClienteController : ControllerBase
     public async Task<IActionResult> Create([FromBody] RequestClienteJson request)
     {
         var response = await _clienteService.CreateAsync(request);
-        return Created(string.Empty, response);
+        return CreatedAtAction(nameof(GetById), new { id = response.Id }, response);
     }
 
     [HttpGet]
@@ -53,10 +56,10 @@ public class ClienteController : ControllerBase
     [HttpDelete("{id:guid}")]
     public async Task<IActionResult> Delete([FromRoute] Guid id)
     {
-        var deleted = await _categoriaService.DeleteAsync(id);
+        var deleted = await _clienteService.DeleteAsync(id);
 
         if (!deleted)
-            return NotFound(new { Message = $"Categoria com ID {id} não encontrada." });
+            return NotFound(new { Message = $"Cliente com ID {id} não encontrada." });
 
         return NoContent();
     }

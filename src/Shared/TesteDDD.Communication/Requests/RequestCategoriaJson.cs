@@ -1,14 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace TesteDDD.Communication.Requests
 {
     public class RequestCategoriaJson
     {
+        [Required(ErrorMessage = "Nome e obrigatorio.")]
+        [MaxLength(120, ErrorMessage = "Nome deve ter no maximo 120 caracteres.")]
         public string Name { get; set; } = string.Empty;
-        public string Descricao { get; set; }
+
+        [Required(ErrorMessage = "Descricao e obrigatoria.")]
+        [MaxLength(500, ErrorMessage = "Descricao deve ter no maximo 500 caracteres.")]
+        public string Descricao { get; set; } = string.Empty;
     }
 }

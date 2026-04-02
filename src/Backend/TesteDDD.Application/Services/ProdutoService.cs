@@ -2,6 +2,7 @@
 using TesteDDD.Communication.Responses;
 using TesteDDD.Domain.Entities;
 using TesteDDD.Domain.Repositories;
+using TesteDDD.Application.Exceptions;
 
 namespace TesteDDD.Application.Services;
 
@@ -25,6 +26,8 @@ public class ProdutoService : IProdutoService
 
     public async Task<ResponseProdutoJson> CreateAsync(RequestProdutoJson request)
     {
+        ValidateRequest(request);
+
         var produto = new Produto(request.Nome, request.Preco);
 
         await _repository.AddAsync(produto);
@@ -66,6 +69,8 @@ public class ProdutoService : IProdutoService
 
     public async Task<ResponseProdutoJson?> UpdateAsync(Guid id, RequestProdutoJson request)
     {
+        ValidateRequest(request);
+
         var produto = await _repository.GetByIdAsync(id);
 
         if (produto == null)
@@ -92,5 +97,17 @@ public class ProdutoService : IProdutoService
 
         await _repository.DeleteAsync(id);
         return true;
+    }
+
+    private static void ValidateRequest(RequestProdutoJson request)
+    {
+        if (string.IsNullOrWhiteSpace(request.Nome))
+            throw new BusinessRuleException("PRODUTO_NOME_INVALIDO", "Nome do produto e obrigatorio.");
+
+        if (request.Nome.Trim().Length < 3)
+            throw new BusinessRuleException("PRODUTO_NOME_CURTO", "Nome do produto deve ter pelo menos 3 caracteres.");
+
+        if (request.Preco <= 0)
+            throw new BusinessRuleException("PRODUTO_PRECO_INVALIDO", "Preco do produto deve ser maior que zero.");
     }
 }

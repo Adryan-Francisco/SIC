@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TesteDDD.Exceptions")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+70760b6cb7976e9aaa80d9e79e8c2b159fdb5410")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+030ee30ab11af9afa379f3561de78f83239daf33")]
 [assembly: System.Reflection.AssemblyProductAttribute("TesteDDD.Exceptions")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TesteDDD.Exceptions")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

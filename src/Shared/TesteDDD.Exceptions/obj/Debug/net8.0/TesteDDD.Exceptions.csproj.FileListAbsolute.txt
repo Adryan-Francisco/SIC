@@ -3,3 +3,25 @@ C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Shared\TesteDDD.Exceptions
 C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\TesteDDD.Exceptions.AssemblyInfoInputs.cache
 C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\TesteDDD.Exceptions.AssemblyInfo.cs
 C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\TesteDDD.Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\bin\Debug\net8.0\TesteDDD.Exceptions.deps.json
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\bin\Debug\net8.0\TesteDDD.Exceptions.dll
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\bin\Debug\net8.0\TesteDDD.Exceptions.pdb
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\bin\Debug\net8.0\TesteDDD.Application.dll
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\bin\Debug\net8.0\TesteDDD.Communication.dll
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\bin\Debug\net8.0\TesteDDD.Domain.dll
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\bin\Debug\net8.0\TesteDDD.Infrastructure.dll
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\bin\Debug\net8.0\TesteDDD.Application.pdb
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\bin\Debug\net8.0\TesteDDD.Infrastructure.pdb
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\bin\Debug\net8.0\TesteDDD.Communication.pdb
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\bin\Debug\net8.0\TesteDDD.Domain.pdb
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\TesteDDD.Exceptions.csproj.AssemblyReference.cache
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\TesteDDD.Exceptions.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\TesteDDD.Exceptions.AssemblyInfoInputs.cache
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\TesteDDD.Exceptions.AssemblyInfo.cs
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\TesteDDD.Exceptions.csproj.CoreCompileInputs.cache
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\TesteDDD.Exceptions.sourcelink.json
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\TesteDDD.06AE442B.Up2Date
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\TesteDDD.Exceptions.dll
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\refint\TesteDDD.Exceptions.dll
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\TesteDDD.Exceptions.pdb
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Exceptions\obj\Debug\net8.0\ref\TesteDDD.Exceptions.dll

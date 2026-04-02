@@ -9,13 +9,13 @@ namespace TesteDDD.Domain.Entities
     public class Produto
     {
     public Guid Id { get; private set; }
-    public String Nome { get; private set; }
+    public string Nome { get; private set; } = string.Empty;
     public decimal Preco { get; private set; }
 
         //Construtor para o Entity FrameWork
         protected Produto() { }
 
-        public Produto(String nome, decimal preco)
+        public Produto(string nome, decimal preco)
         {
             Id = Guid.NewGuid();
             Nome = nome;

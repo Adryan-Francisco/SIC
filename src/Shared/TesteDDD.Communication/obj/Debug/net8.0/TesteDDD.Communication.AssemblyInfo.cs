@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TesteDDD.Communication")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+55c9ccc59e6f6b8480edeb729498aba832b42011")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+030ee30ab11af9afa379f3561de78f83239daf33")]
 [assembly: System.Reflection.AssemblyProductAttribute("TesteDDD.Communication")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TesteDDD.Communication")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

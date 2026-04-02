@@ -19,7 +19,7 @@ public class CategoriaController : ControllerBase
     public async Task<IActionResult> Create([FromBody] RequestCategoriaJson request)
     {
         var response = await _categoriaService.CreateAsync(request);
-        return Created(string.Empty, response);
+        return CreatedAtAction(nameof(GetById), new { id = response.Id }, response);
     }
 
     [HttpGet]

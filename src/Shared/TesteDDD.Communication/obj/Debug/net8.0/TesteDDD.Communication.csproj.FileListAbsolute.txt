@@ -21,3 +21,15 @@ C:\Users\Aluno\Desktop\SIC\src\Shared\TesteDDD.Communication\obj\Debug\net8.0\Te
 C:\Users\Aluno\Desktop\SIC\src\Shared\TesteDDD.Communication\obj\Debug\net8.0\refint\TesteDDD.Communication.dll
 C:\Users\Aluno\Desktop\SIC\src\Shared\TesteDDD.Communication\obj\Debug\net8.0\TesteDDD.Communication.pdb
 C:\Users\Aluno\Desktop\SIC\src\Shared\TesteDDD.Communication\obj\Debug\net8.0\ref\TesteDDD.Communication.dll
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Communication\bin\Debug\net8.0\TesteDDD.Communication.deps.json
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Communication\bin\Debug\net8.0\TesteDDD.Communication.dll
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Communication\bin\Debug\net8.0\TesteDDD.Communication.pdb
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Communication\obj\Debug\net8.0\TesteDDD.Communication.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Communication\obj\Debug\net8.0\TesteDDD.Communication.AssemblyInfoInputs.cache
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Communication\obj\Debug\net8.0\TesteDDD.Communication.AssemblyInfo.cs
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Communication\obj\Debug\net8.0\TesteDDD.Communication.csproj.CoreCompileInputs.cache
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Communication\obj\Debug\net8.0\TesteDDD.Communication.sourcelink.json
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Communication\obj\Debug\net8.0\TesteDDD.Communication.dll
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Communication\obj\Debug\net8.0\refint\TesteDDD.Communication.dll
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Communication\obj\Debug\net8.0\TesteDDD.Communication.pdb
+C:\Users\adrya\Documents\Projetos\SIC\src\Shared\TesteDDD.Communication\obj\Debug\net8.0\ref\TesteDDD.Communication.dll

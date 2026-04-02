@@ -1,7 +1,9 @@
 ﻿using TesteDDD.Communication.Requests;
 using TesteDDD.Communication.Responses;
 using TesteDDD.Domain.Entities;
+using TesteDDD.Domain.Entities.Categoria;
 using TesteDDD.Domain.Repositories;
+using TesteDDD.Application.Exceptions;
 
 namespace TesteDDD.Application.Services;
 
@@ -25,6 +27,8 @@ public class CategoriaService : ICategoriaService
 
     public async Task<ResponseCategoriaJson> CreateAsync(RequestCategoriaJson request)
     {
+        ValidateRequest(request);
+
         var categoria = new Categoria(request.Name, request.Descricao);
 
         await _repository.AddAsync(categoria);
@@ -66,6 +70,8 @@ public class CategoriaService : ICategoriaService
 
     public async Task<ResponseCategoriaJson?> UpdateAsync(Guid id, RequestCategoriaJson request)
     {
+        ValidateRequest(request);
+
         var categoria = await _repository.GetByIdAsync(id);
 
         if (categoria == null)
@@ -92,5 +98,17 @@ public class CategoriaService : ICategoriaService
 
         await _repository.DeleteAsync(id);
         return true;
+    }
+
+    private static void ValidateRequest(RequestCategoriaJson request)
+    {
+        if (string.IsNullOrWhiteSpace(request.Name))
+            throw new BusinessRuleException("CATEGORIA_NOME_INVALIDO", "Nome da categoria e obrigatorio.");
+
+        if (request.Name.Trim().Length < 3)
+            throw new BusinessRuleException("CATEGORIA_NOME_CURTO", "Nome da categoria deve ter pelo menos 3 caracteres.");
+
+        if (string.IsNullOrWhiteSpace(request.Descricao))
+            throw new BusinessRuleException("CATEGORIA_DESCRICAO_INVALIDA", "Descricao da categoria e obrigatoria.");
     }
 }

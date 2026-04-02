@@ -10,6 +10,6 @@ namespace TesteDDD.Communication.Responses
     {
         public Guid Id { get; set; }
         public string Name { get; set; } = string.Empty;
-        public string Descricao { get; set; } 
+        public string Descricao { get; set; } = string.Empty;
     }
 }
