@@ -85,7 +85,9 @@ public class CategoriaService : ICategoriaService
         {
             Id = categoria.Id,
             Name = categoria.Name,
-            Descricao = categoria.Descricao
+            Descricao = categoria.Descricao,
+
+            C
         };
     }
 

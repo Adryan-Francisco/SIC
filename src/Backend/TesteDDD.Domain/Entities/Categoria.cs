@@ -5,27 +5,32 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TesteDDD.Domain.Entities.Categoria
+namespace TesteDDD.Domain.Entities
 {
     public class Categoria
     {
-        public Guid Id { get; set; }
-        public string Name { get; set; } = string.Empty;
-        
-        public string Descricao { get; set; } = string.Empty;
+        public Guid Id { get; private set; }
+        public string Nome { get; private set; } = string.Empty;
+        public string Descricao { get; private set; } = string.Empty;
 
         protected Categoria() { }
 
-        public Categoria (string name, string descricao)
+        public Categoria(string nome, string descricao)
         {
+            if (string.IsNullOrWhiteSpace(nome))
+                throw new Exception("Nome é obrigatório");
+
+            if (string.IsNullOrWhiteSpace(descricao))
+                throw new Exception("Descrição é obrigatória");
+
             Id = Guid.NewGuid();
-            Name = name;
+            Nome = nome;
             Descricao = descricao;
         }
 
-        public void Update (string name, string descricao)
+        public void Update(string nome, string descricao)
         {
-            Name = name;
+            Nome = nome;
             Descricao = descricao;
         }
     }

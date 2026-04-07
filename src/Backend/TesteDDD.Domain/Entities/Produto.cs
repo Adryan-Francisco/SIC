@@ -8,25 +8,37 @@ namespace TesteDDD.Domain.Entities
 {
     public class Produto
     {
-    public Guid Id { get; private set; }
-    public string Nome { get; private set; } = string.Empty;
-    public decimal Preco { get; private set; }
+        public Guid Id { get; private set; }
+        public string Nome { get; private set; } = string.Empty;
+        public decimal Preco { get; private set; }
 
-        //Construtor para o Entity FrameWork
+        public Guid CategoriaId { get; private set; }
+        public Categoria Categoria { get; private set; } = null!;
+
         protected Produto() { }
 
-        public Produto(string nome, decimal preco)
+        public Produto(string nome, decimal preco, Categoria categoria)
         {
             Id = Guid.NewGuid();
             Nome = nome;
             Preco = preco;
+
+            DefinirCategoria(categoria);
         }
 
-        public void Update (string nome, decimal preco)
+        public void Update(string nome, decimal preco)
         {
-            // Aqui entrariam validações de domínio (ex: preço não pode ser negativo)
             Nome = nome;
             Preco = preco;
+        }
+
+        public void DefinirCategoria(Categoria categoria)
+        {
+            if (categoria == null)
+                throw new ArgumentNullException(nameof(categoria));
+
+            Categoria = categoria;
+            CategoriaId = categoria.Id;
         }
     }
 }

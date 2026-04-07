@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
 using TesteDDD.Domain.Entities;
-using TesteDDD.Domain.Entities.Categoria; // Ajuste para o namespace correto da sua entidade
+
 
 namespace TesteDDD.Infrastructure.Data;
 
@@ -18,9 +18,17 @@ public class AppDbContext : DbContext
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<Produto>()
-            .Property(p => p.Preco)
-            .HasPrecision(18, 2);
+       .Property(p => p.Preco)
+       .HasPrecision(18, 2);
+
+        modelBuilder.Entity<Produto>()
+            .HasOne(p => p.Categoria)
+            .WithMany(c => c.Produtos)
+            .HasForeignKey(p => p.CategoriaId);
 
         base.OnModelCreating(modelBuilder);
+
+
+       
     }
 }

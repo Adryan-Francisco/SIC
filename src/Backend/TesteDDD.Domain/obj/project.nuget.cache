@@ -1,8 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "qEmI0LsTHrs=",
+  "dgSpecHash": "mmCPhO36MHc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.25\\microsoft.windowsdesktop.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.25\\microsoft.netcore.app.ref.8.0.25.nupkg.sha512",
+    "C:\\Users\\Aluno\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.25\\microsoft.aspnetcore.app.ref.8.0.25.nupkg.sha512"
+  ],
   "logs": []
 }
