@@ -1,4 +1,5 @@
-﻿using TesteDDD.Communication.Requests;
+﻿using AutoMapper;
+using TesteDDD.Communication.Requests;
 using TesteDDD.Communication.Responses;
 using TesteDDD.Domain.Entities;
 using TesteDDD.Domain.Repositories;
@@ -18,40 +19,28 @@ namespace TesteDDD.Application.Services
     public class ClienteService : IClienteService
     {
         private readonly IClienteRepository _repository;
+        private readonly IMapper _mapper;
 
-        public ClienteService(IClienteRepository repository)
+        public ClienteService(IClienteRepository repository, IMapper mapper)
         {
             _repository = repository;
+            _mapper = mapper;
         }
 
         public async Task<ResponseClienteJson> CreateAsync(RequestClienteJson request)
         {
-            ValidateRequest(request);
-
             var cliente = new Cliente(Guid.NewGuid(), request.Nome, request.Endereco, request.Cep);
 
             await _repository.AddAsync(cliente);
 
-            return new ResponseClienteJson
-            {
-                Id = cliente.Id,
-                Nome = cliente.Nome,
-                Endereco = cliente.Endereco,
-                Cep = cliente.Cep
-            };
+            return _mapper.Map<ResponseClienteJson>(cliente);
         }
 
         public async Task<IList<ResponseClienteJson>> GetAllAsync()
         {
             var clientes = await _repository.GetAllAsync();
 
-            return clientes.Select(c => new ResponseClienteJson
-            {
-                Id = c.Id,
-                Nome = c.Nome,
-                Endereco = c.Endereco,
-                Cep = c.Cep
-            }).ToList();
+            return _mapper.Map<IList<ResponseClienteJson>>(clientes);
         }
 
         public async Task<ResponseClienteJson?> GetByIdAsync(Guid id)
@@ -61,19 +50,11 @@ namespace TesteDDD.Application.Services
             if (cliente == null)
                 return null;
 
-            return new ResponseClienteJson
-            {
-                Id = cliente.Id,
-                Nome = cliente.Nome,
-                Endereco = cliente.Endereco,
-                Cep = cliente.Cep 
-            };
+            return _mapper.Map<ResponseClienteJson>(cliente);
         }
 
         public async Task<ResponseClienteJson?> UpdateAsync(Guid id, RequestClienteJson request)
         {
-            ValidateRequest(request);
-
             var cliente = await _repository.GetByIdAsync(id);
 
             if (cliente == null)
@@ -83,13 +64,7 @@ namespace TesteDDD.Application.Services
 
             await _repository.UpdateAsync(cliente);
 
-            return new ResponseClienteJson
-            {
-                Id = cliente.Id,
-                Nome = cliente.Nome,
-                Endereco = cliente.Endereco,
-                Cep = cliente.Cep
-            };
+            return _mapper.Map<ResponseClienteJson>(cliente);
         }
 
         public async Task<bool> DeleteAsync(Guid id)
@@ -102,21 +77,5 @@ namespace TesteDDD.Application.Services
             await _repository.DeleteAsync(id);
             return true;
         }
-
-        private static void ValidateRequest(RequestClienteJson request)
-        {
-            if (string.IsNullOrWhiteSpace(request.Nome))
-                throw new BusinessRuleException("CLIENTE_NOME_INVALIDO", "Nome do cliente e obrigatorio.");
-
-            if (request.Nome.Trim().Length < 3)
-                throw new BusinessRuleException("CLIENTE_NOME_CURTO", "Nome do cliente deve ter pelo menos 3 caracteres.");
-
-            if (string.IsNullOrWhiteSpace(request.Endereco))
-                throw new BusinessRuleException("CLIENTE_ENDERECO_INVALIDO", "Endereco do cliente e obrigatorio.");
-
-            if (string.IsNullOrWhiteSpace(request.Cep))
-                throw new BusinessRuleException("CLIENTE_CEP_INVALIDO", "CEP do cliente e obrigatorio.");
-        }
     }
-
-    }
+}

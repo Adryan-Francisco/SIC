@@ -17,17 +17,28 @@ namespace TesteDDD.Domain.Entities
 
         protected Produto() { }
 
-        public Produto(string nome, decimal preco, Categoria categoria)
+        public Produto(string nome, decimal preco, Guid categoriaId)
         {
+            if (string.IsNullOrWhiteSpace(nome))
+                throw new ArgumentException("Nome é obrigatório", nameof(nome));
+            if (preco <= 0)
+                throw new ArgumentException("Preço deve ser maior que zero", nameof(preco));
+            if (categoriaId == Guid.Empty)
+                throw new ArgumentException("CategoriaId é obrigatório", nameof(categoriaId));
+
             Id = Guid.NewGuid();
             Nome = nome;
             Preco = preco;
-
-            DefinirCategoria(categoria);
+            CategoriaId = categoriaId;
         }
 
         public void Update(string nome, decimal preco)
         {
+            if (string.IsNullOrWhiteSpace(nome))
+                throw new ArgumentException("Nome é obrigatório", nameof(nome));
+            if (preco <= 0)
+                throw new ArgumentException("Preço deve ser maior que zero", nameof(preco));
+
             Nome = nome;
             Preco = preco;
         }

@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Aluno\\Desktop\\SIC\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|c:\\users\\aluno\\desktop\\sic\\src\\backend\\testeddd.domain\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|solutionrelative:src\\backend\\testeddd.domain\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|c:\\users\\aluno\\desktop\\sic\\src\\backend\\testeddd.domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|solutionrelative:src\\backend\\testeddd.domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|c:\\users\\aluno\\desktop\\sic\\src\\backend\\testeddd.application\\services\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|solutionrelative:src\\backend\\testeddd.application\\services\\categoriaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|c:\\users\\aluno\\desktop\\sic\\src\\backend\\testeddd.application\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|solutionrelative:src\\backend\\testeddd.application\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|c:\\users\\aluno\\desktop\\sic\\src\\backend\\testeddd.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|solutionrelative:src\\backend\\testeddd.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|c:\\users\\aluno\\desktop\\sic\\src\\backend\\testeddd.domain\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|solutionrelative:src\\backend\\testeddd.domain\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|c:\\users\\aluno\\desktop\\sic\\src\\backend\\testeddd.application\\services\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|solutionrelative:src\\backend\\testeddd.application\\services\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|c:\\users\\aluno\\desktop\\sic\\src\\backend\\testeddd.application\\exceptions\\businessruleexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,14 +87,6 @@
       "RelativeMoniker": "D:0:0:{D33A1C3C-F6CB-4719-8C5D-7AB69CF37E7E}|src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj|solutionrelative:src\\backend\\testeddd.api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|c:\\users\\aluno\\desktop\\sic\\src\\backend\\testeddd.application\\services\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|solutionrelative:src\\backend\\testeddd.application\\services\\produtoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|c:\\users\\aluno\\desktop\\sic\\src\\backend\\testeddd.application\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{639B1514-968E-479A-83C3-6A95F8C9EDA9}|src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj|solutionrelative:src\\backend\\testeddd.application\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|c:\\users\\aluno\\desktop\\sic\\src\\backend\\testeddd.infrastructure\\repositories\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|solutionrelative:src\\backend\\testeddd.infrastructure\\repositories\\categoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -93,22 +109,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|c:\\users\\aluno\\desktop\\sic\\src\\backend\\testeddd.domain\\repositories\\icategoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|solutionrelative:src\\backend\\testeddd.domain\\repositories\\icategoriarepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|c:\\users\\aluno\\desktop\\sic\\src\\backend\\testeddd.domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|solutionrelative:src\\backend\\testeddd.domain\\entities\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|c:\\users\\aluno\\desktop\\sic\\src\\backend\\testeddd.domain\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|solutionrelative:src\\backend\\testeddd.domain\\entities\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|c:\\users\\aluno\\desktop\\sic\\src\\backend\\testeddd.domain\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6231181-5EDE-4AE6-BB78-A97F2D5453A2}|src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj|solutionrelative:src\\backend\\testeddd.domain\\entities\\produto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|c:\\users\\aluno\\desktop\\sic\\src\\backend\\testeddd.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D1599A73-D116-4F67-BB29-98DF78524DE0}|src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj|solutionrelative:src\\backend\\testeddd.infrastructure\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7CB20D58-C2D5-4556-B5EC-A55F739D9904}|src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj|c:\\users\\aluno\\desktop\\sic\\src\\shared\\testeddd.communication\\responses\\responsecategoriajson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -166,59 +166,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "TesteDDD.Communication.csproj",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
-              "RelativeDocumentMoniker": "src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
-              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
-              "RelativeToolTip": "src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-31T15:46:37.77Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "RequestCategoriaJson.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\Requests\\RequestCategoriaJson.cs",
-              "RelativeDocumentMoniker": "src\\Shared\\TesteDDD.Communication\\Requests\\RequestCategoriaJson.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\Requests\\RequestCategoriaJson.cs",
-              "RelativeToolTip": "src\\Shared\\TesteDDD.Communication\\Requests\\RequestCategoriaJson.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T15:46:37.72Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RequestClienteJson.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\Requests\\RequestClienteJson.cs",
-              "RelativeDocumentMoniker": "src\\Shared\\TesteDDD.Communication\\Requests\\RequestClienteJson.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\Requests\\RequestClienteJson.cs",
-              "RelativeToolTip": "src\\Shared\\TesteDDD.Communication\\Requests\\RequestClienteJson.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T19:49:26.175Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "RequestProdutoJson.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\Requests\\RequestProdutoJson.cs",
-              "RelativeDocumentMoniker": "src\\Shared\\TesteDDD.Communication\\Requests\\RequestProdutoJson.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\Requests\\RequestProdutoJson.cs",
-              "RelativeToolTip": "src\\Shared\\TesteDDD.Communication\\Requests\\RequestProdutoJson.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T15:46:37.75Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "TesteDDD.Application.csproj",
               "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj",
               "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj",
@@ -226,116 +174,36 @@
               "RelativeToolTip": "src\\Backend\\TesteDDD.Application\\TesteDDD.Application.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-31T15:46:37.727Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T15:46:37.727Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "BusinessRuleException.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application\\Exceptions\\BusinessRuleException.cs",
               "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Application\\Exceptions\\BusinessRuleException.cs",
               "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application\\Exceptions\\BusinessRuleException.cs",
               "RelativeToolTip": "src\\Backend\\TesteDDD.Application\\Exceptions\\BusinessRuleException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T17:31:48.644Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-04-02T17:31:48.644Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "CategoriaService.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application\\Services\\CategoriaService.cs",
               "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Application\\Services\\CategoriaService.cs",
               "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application\\Services\\CategoriaService.cs",
               "RelativeToolTip": "src\\Backend\\TesteDDD.Application\\Services\\CategoriaService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAFUAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-31T15:46:37.514Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ProdutoEndpointsTests.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\tests\\TesteDDD.Api.IntegrationTests\\ProdutoEndpointsTests.cs",
-              "RelativeDocumentMoniker": "tests\\TesteDDD.Api.IntegrationTests\\ProdutoEndpointsTests.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\tests\\TesteDDD.Api.IntegrationTests\\ProdutoEndpointsTests.cs",
-              "RelativeToolTip": "tests\\TesteDDD.Api.IntegrationTests\\ProdutoEndpointsTests.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T17:34:51.291Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CustomWebApplicationFactory.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\tests\\TesteDDD.Api.IntegrationTests\\CustomWebApplicationFactory.cs",
-              "RelativeDocumentMoniker": "tests\\TesteDDD.Api.IntegrationTests\\CustomWebApplicationFactory.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\tests\\TesteDDD.Api.IntegrationTests\\CustomWebApplicationFactory.cs",
-              "RelativeToolTip": "tests\\TesteDDD.Api.IntegrationTests\\CustomWebApplicationFactory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T17:34:48.909Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "CategoriaEndpointsTests.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\tests\\TesteDDD.Api.IntegrationTests\\CategoriaEndpointsTests.cs",
-              "RelativeDocumentMoniker": "tests\\TesteDDD.Api.IntegrationTests\\CategoriaEndpointsTests.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\tests\\TesteDDD.Api.IntegrationTests\\CategoriaEndpointsTests.cs",
-              "RelativeToolTip": "tests\\TesteDDD.Api.IntegrationTests\\CategoriaEndpointsTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T17:30:47.373Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ClienteEndpointsTests.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\tests\\TesteDDD.Api.IntegrationTests\\ClienteEndpointsTests.cs",
-              "RelativeDocumentMoniker": "tests\\TesteDDD.Api.IntegrationTests\\ClienteEndpointsTests.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\tests\\TesteDDD.Api.IntegrationTests\\ClienteEndpointsTests.cs",
-              "RelativeToolTip": "tests\\TesteDDD.Api.IntegrationTests\\ClienteEndpointsTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-02T17:32:51.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ClienteController.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Api\\Controllers\\ClienteController.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Api\\Controllers\\ClienteController.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Api\\Controllers\\ClienteController.cs",
-              "RelativeToolTip": "src\\Backend\\TesteDDD.Api\\Controllers\\ClienteController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAdAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T20:02:59.426Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "ProdutoController.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Api\\Controllers\\ProdutoController.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Api\\Controllers\\ProdutoController.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Api\\Controllers\\ProdutoController.cs",
-              "RelativeToolTip": "src\\Backend\\TesteDDD.Api\\Controllers\\ProdutoController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowEQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T15:46:37.755Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 3,
               "Title": "ClienteService.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application\\Services\\ClienteService.cs",
               "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Application\\Services\\ClienteService.cs",
@@ -348,7 +216,189 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ProdutoService.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application\\Services\\ProdutoService.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Application\\Services\\ProdutoService.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application\\Services\\ProdutoService.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Application\\Services\\ProdutoService.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAkwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T15:46:37.716Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\Entities\\Cliente.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Domain\\Entities\\Cliente.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\Entities\\Cliente.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Domain\\Entities\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T19:37:55.728Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\Entities\\Categoria.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Domain\\Entities\\Categoria.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\Entities\\Categoria.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Domain\\Entities\\Categoria.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T15:46:37.752Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Produto.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\Entities\\Produto.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Domain\\Entities\\Produto.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\Entities\\Produto.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Domain\\Entities\\Produto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T15:46:37.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Infrastructure\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Infrastructure\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T15:46:37.736Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RequestProdutoJson.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\Requests\\RequestProdutoJson.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\TesteDDD.Communication\\Requests\\RequestProdutoJson.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\Requests\\RequestProdutoJson.cs",
+              "RelativeToolTip": "src\\Shared\\TesteDDD.Communication\\Requests\\RequestProdutoJson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T15:46:37.75Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "RequestClienteJson.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\Requests\\RequestClienteJson.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\TesteDDD.Communication\\Requests\\RequestClienteJson.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\Requests\\RequestClienteJson.cs",
+              "RelativeToolTip": "src\\Shared\\TesteDDD.Communication\\Requests\\RequestClienteJson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T19:49:26.175Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RequestCategoriaJson.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\Requests\\RequestCategoriaJson.cs",
+              "RelativeDocumentMoniker": "src\\Shared\\TesteDDD.Communication\\Requests\\RequestCategoriaJson.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\Requests\\RequestCategoriaJson.cs",
+              "RelativeToolTip": "src\\Shared\\TesteDDD.Communication\\Requests\\RequestCategoriaJson.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T15:46:37.72Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "TesteDDD.Communication.csproj",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
+              "RelativeDocumentMoniker": "src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
+              "RelativeToolTip": "src\\Shared\\TesteDDD.Communication\\TesteDDD.Communication.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-03-31T15:46:37.77Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProdutoEndpointsTests.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\tests\\TesteDDD.Api.IntegrationTests\\ProdutoEndpointsTests.cs",
+              "RelativeDocumentMoniker": "tests\\TesteDDD.Api.IntegrationTests\\ProdutoEndpointsTests.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\tests\\TesteDDD.Api.IntegrationTests\\ProdutoEndpointsTests.cs",
+              "RelativeToolTip": "tests\\TesteDDD.Api.IntegrationTests\\ProdutoEndpointsTests.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T17:34:51.291Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 14,
+              "Title": "CustomWebApplicationFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\tests\\TesteDDD.Api.IntegrationTests\\CustomWebApplicationFactory.cs",
+              "RelativeDocumentMoniker": "tests\\TesteDDD.Api.IntegrationTests\\CustomWebApplicationFactory.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\tests\\TesteDDD.Api.IntegrationTests\\CustomWebApplicationFactory.cs",
+              "RelativeToolTip": "tests\\TesteDDD.Api.IntegrationTests\\CustomWebApplicationFactory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T17:34:48.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CategoriaEndpointsTests.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\tests\\TesteDDD.Api.IntegrationTests\\CategoriaEndpointsTests.cs",
+              "RelativeDocumentMoniker": "tests\\TesteDDD.Api.IntegrationTests\\CategoriaEndpointsTests.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\tests\\TesteDDD.Api.IntegrationTests\\CategoriaEndpointsTests.cs",
+              "RelativeToolTip": "tests\\TesteDDD.Api.IntegrationTests\\CategoriaEndpointsTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T17:30:47.373Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ClienteEndpointsTests.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\tests\\TesteDDD.Api.IntegrationTests\\ClienteEndpointsTests.cs",
+              "RelativeDocumentMoniker": "tests\\TesteDDD.Api.IntegrationTests\\ClienteEndpointsTests.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\tests\\TesteDDD.Api.IntegrationTests\\ClienteEndpointsTests.cs",
+              "RelativeToolTip": "tests\\TesteDDD.Api.IntegrationTests\\ClienteEndpointsTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-02T17:32:51.955Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Api\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Api\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Api\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Api\\Controllers\\ClienteController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-01T20:02:59.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "ProdutoController.cs",
+              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Api\\Controllers\\ProdutoController.cs",
+              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Api\\Controllers\\ProdutoController.cs",
+              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Api\\Controllers\\ProdutoController.cs",
+              "RelativeToolTip": "src\\Backend\\TesteDDD.Api\\Controllers\\ProdutoController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowEQAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-31T15:46:37.755Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Api\\Program.cs",
               "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Api\\Program.cs",
@@ -356,12 +406,11 @@
               "RelativeToolTip": "src\\Backend\\TesteDDD.Api\\Program.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAAAFwAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T15:46:37.723Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T15:46:37.723Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 17,
               "Title": "CategoriaController.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Api\\Controllers\\CategoriaController.cs",
               "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Api\\Controllers\\CategoriaController.cs",
@@ -369,12 +418,11 @@
               "RelativeToolTip": "src\\Backend\\TesteDDD.Api\\Controllers\\CategoriaController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAABYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T16:54:52.562Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T16:54:52.562Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "IProdutoRepository.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\Repositories\\IProdutoRepository.cs",
               "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Domain\\Repositories\\IProdutoRepository.cs",
@@ -386,7 +434,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "CategoriaRepository.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\Repositories\\CategoriaRepository.cs",
               "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Infrastructure\\Repositories\\CategoriaRepository.cs",
@@ -398,20 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "ProdutoService.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application\\Services\\ProdutoService.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Application\\Services\\ProdutoService.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application\\Services\\ProdutoService.cs",
-              "RelativeToolTip": "src\\Backend\\TesteDDD.Application\\Services\\ProdutoService.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAswAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T15:46:37.716Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "IClienteRepository.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\Repositories\\IClienteRepository.cs",
               "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Domain\\Repositories\\IClienteRepository.cs",
@@ -423,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "ClienteRepository.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\Repositories\\ClienteRepository.cs",
               "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Infrastructure\\Repositories\\ClienteRepository.cs",
@@ -435,7 +470,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 25,
               "Title": "ProdutoRepository.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\Repositories\\ProdutoRepository.cs",
               "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Infrastructure\\Repositories\\ProdutoRepository.cs",
@@ -447,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 26,
               "Title": "ICategoriaRepository.cs",
               "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\Repositories\\ICategoriaRepository.cs",
               "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Domain\\Repositories\\ICategoriaRepository.cs",
@@ -456,54 +491,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-31T15:46:37.711Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Cliente.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\Entities\\Cliente.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Domain\\Entities\\Cliente.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\Entities\\Cliente.cs",
-              "RelativeToolTip": "src\\Backend\\TesteDDD.Domain\\Entities\\Cliente.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-01T19:37:55.728Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "Categoria.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\Entities\\Categoria.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Domain\\Entities\\Categoria.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\Entities\\Categoria.cs",
-              "RelativeToolTip": "src\\Backend\\TesteDDD.Domain\\Entities\\Categoria.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T15:46:37.752Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Produto.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\Entities\\Produto.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Domain\\Entities\\Produto.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain\\Entities\\Produto.cs",
-              "RelativeToolTip": "src\\Backend\\TesteDDD.Domain\\Entities\\Produto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T15:46:37.747Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "src\\Backend\\TesteDDD.Infrastructure\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Infrastructure\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "src\\Backend\\TesteDDD.Infrastructure\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-31T15:46:37.736Z"
             },
             {
               "$type": "Document",
@@ -551,8 +538,7 @@
               "RelativeToolTip": "src\\Backend\\TesteDDD.Domain\\TesteDDD.Domain.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-31T15:46:37.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T15:46:37.758Z"
             },
             {
               "$type": "Document",
@@ -564,8 +550,7 @@
               "RelativeToolTip": "src\\Backend\\TesteDDD.Infrastructure\\TesteDDD.Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-31T15:46:37.596Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T15:46:37.596Z"
             },
             {
               "$type": "Document",
@@ -577,8 +562,7 @@
               "RelativeToolTip": "src\\Backend\\TesteDDD.Api\\TesteDDD.Api.csproj",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2026-03-31T15:46:37.763Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-31T15:46:37.763Z"
             }
           ]
         }

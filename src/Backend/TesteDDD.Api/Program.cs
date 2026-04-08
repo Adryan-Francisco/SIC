@@ -1,13 +1,27 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using FluentValidation;
+using Serilog;
 using TesteDDD.Application.Services;
 using TesteDDD.Application.Exceptions;
+using TesteDDD.Application.Mappings;
+using TesteDDD.Application.Validators;
+using TesteDDD.Api.Middleware;
 using TesteDDD.Domain.Repositories;
 using TesteDDD.Infrastructure.Data;
 using TesteDDD.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
+
+// Configurar Serilog
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Information()
+    .WriteTo.Console()
+    .WriteTo.File("logs/log-.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+
+builder.Host.UseSerilog();
 
 // Add services to the container.
 
@@ -16,6 +30,10 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddProblemDetails();
+builder.Services.AddAutoMapper(typeof(MappingProfile));
+
+// Registrar FluentValidation
+builder.Services.AddValidatorsFromAssemblyContaining<RequestProdutoJsonValidator>();
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection")
     ?? throw new InvalidOperationException("Connection string 'DefaultConnection' nao configurada.");
@@ -26,6 +44,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
 builder.Services.AddScoped<IProdutoService, ProdutoService>();
 
+// Adicionar ICategoriaRepository no serviço de ProdutoService
 builder.Services.AddScoped<ICategoriaRepository, CategoriaRepository>();
 builder.Services.AddScoped<ICategoriaService, CategoriaService>();
 
@@ -82,6 +101,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.UseValidationMiddleware();
 app.UseHttpsRedirection();
 
 app.UseAuthorization();

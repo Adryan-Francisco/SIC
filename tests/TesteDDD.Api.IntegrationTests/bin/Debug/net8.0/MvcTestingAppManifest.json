@@ -1,7 +1,7 @@
 {
-  "TesteDDD.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Api",
-  "TesteDDD.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Application",
-  "TesteDDD.Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Shared\\TesteDDD.Communication",
-  "TesteDDD.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Domain",
-  "TesteDDD.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\adrya\\Documents\\Projetos\\SIC\\src\\Backend\\TesteDDD.Infrastructure"
+  "TesteDDD.Api, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Api",
+  "TesteDDD.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Application",
+  "TesteDDD.Communication, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Shared\\TesteDDD.Communication",
+  "TesteDDD.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Domain",
+  "TesteDDD.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null": "C:\\Users\\Aluno\\Desktop\\SIC\\src\\Backend\\TesteDDD.Infrastructure"
 }
