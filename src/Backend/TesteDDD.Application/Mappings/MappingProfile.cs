@@ -25,5 +25,17 @@ public class MappingProfile : Profile
         CreateMap<Cliente, ResponseClienteJson>();
         CreateMap<RequestClienteJson, Cliente>()
             .ForMember(dest => dest.Id, opt => opt.Ignore());
+
+        //Vendas
+        CreateMap<Vendas, ResponseVendasJson>()
+            .ForMember(dest => dest.Total, opt => opt.MapFrom(src => src.ValorTotal))
+            .ForMember(dest => dest.Itens, opt => opt.MapFrom(src => src.Itens));
+
+        //ItemVenda
+        CreateMap<ItemVendas, ResponseItemVendasJson>()
+            .ForMember(dest => dest.ProdutoNome, opt => opt.MapFrom(src => src.Produto.Nome));
+        CreateMap<RequestItemVendasJson, ItemVendas>()
+            .ForMember(dest => dest.Id, opt => opt.Ignore());
+
     }
 }

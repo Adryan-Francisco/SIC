@@ -31,10 +31,19 @@ public class ProdutoEndpointsTests : IClassFixture<CustomWebApplicationFactory>
     [Fact]
     public async Task CreateProduto_WithValidPayload_Returns201AndLocation()
     {
+        var categoriaResponse = await _client.PostAsJsonAsync("/api/Categoria", new
+        {
+            name = "Categoria Produto",
+            descricao = "Categoria valida para produto"
+        });
+        var categoria = await categoriaResponse.Content.ReadFromJsonAsync<JsonElement>();
+        var categoriaId = categoria.GetProperty("id").GetGuid();
+
         var payload = new
         {
             nome = "Produto Integracao",
-            preco = 10.5m
+            preco = 10.5m,
+            categoriaId
         };
 
         var response = await _client.PostAsJsonAsync("/api/Produto", payload);
@@ -54,10 +63,19 @@ public class ProdutoEndpointsTests : IClassFixture<CustomWebApplicationFactory>
     [Fact]
     public async Task CreateProduto_WithShortNome_ReturnsBusinessCode()
     {
+        var categoriaResponse = await _client.PostAsJsonAsync("/api/Categoria", new
+        {
+            name = "Categoria Teste",
+            descricao = "Categoria valida para teste"
+        });
+        var categoria = await categoriaResponse.Content.ReadFromJsonAsync<JsonElement>();
+        var categoriaId = categoria.GetProperty("id").GetGuid();
+
         var payload = new
         {
             nome = "ab",
-            preco = 10.5m
+            preco = 10.5m,
+            categoriaId
         };
 
         var response = await _client.PostAsJsonAsync("/api/Produto", payload);
