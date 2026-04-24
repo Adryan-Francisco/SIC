@@ -1,0 +1,61 @@
+2026-04-10 13:36:36.604 -03:00 [INF] Executed DbCommand (104ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+CREATE DATABASE [TesteDDDDb];
+2026-04-10 13:36:36.672 -03:00 [INF] Executed DbCommand (34ms) [Parameters=[], CommandType='"Text"', CommandTimeout='60']
+IF SERVERPROPERTY('EngineEdition') <> 5
+BEGIN
+    ALTER DATABASE [TesteDDDDb] SET READ_COMMITTED_SNAPSHOT ON;
+END;
+2026-04-10 13:36:36.688 -03:00 [INF] Executed DbCommand (5ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-10 13:36:36.735 -03:00 [INF] Executed DbCommand (7ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [__EFMigrationsHistory] (
+    [MigrationId] nvarchar(150) NOT NULL,
+    [ProductVersion] nvarchar(32) NOT NULL,
+    CONSTRAINT [PK___EFMigrationsHistory] PRIMARY KEY ([MigrationId])
+);
+2026-04-10 13:36:36.738 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT 1
+2026-04-10 13:36:36.750 -03:00 [INF] Executed DbCommand (8ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT OBJECT_ID(N'[__EFMigrationsHistory]');
+2026-04-10 13:36:36.763 -03:00 [INF] Executed DbCommand (10ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [MigrationId], [ProductVersion]
+FROM [__EFMigrationsHistory]
+ORDER BY [MigrationId];
+2026-04-10 13:36:36.779 -03:00 [INF] Applying migration '20260401235515_InitialCreate'.
+2026-04-10 13:36:36.799 -03:00 [INF] Executed DbCommand (2ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Categorias] (
+    [Id] uniqueidentifier NOT NULL,
+    [Name] nvarchar(max) NOT NULL,
+    [Descricao] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Categorias] PRIMARY KEY ([Id])
+);
+2026-04-10 13:36:36.805 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Clientes] (
+    [Id] uniqueidentifier NOT NULL,
+    [Nome] nvarchar(max) NOT NULL,
+    [Endereco] nvarchar(max) NOT NULL,
+    [Cep] nvarchar(max) NOT NULL,
+    CONSTRAINT [PK_Clientes] PRIMARY KEY ([Id])
+);
+2026-04-10 13:36:36.809 -03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+CREATE TABLE [Produtos] (
+    [Id] uniqueidentifier NOT NULL,
+    [Nome] nvarchar(max) NOT NULL,
+    [Preco] decimal(18,2) NOT NULL,
+    CONSTRAINT [PK_Produtos] PRIMARY KEY ([Id])
+);
+2026-04-10 13:36:36.814 -03:00 [INF] Executed DbCommand (3ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260401235515_InitialCreate', N'8.0.0');
+2026-04-10 13:36:36.821 -03:00 [INF] Applying migration '20260401235755_ConfigureProdutoPrecoPrecision'.
+2026-04-10 13:36:36.825 -03:00 [INF] Executed DbCommand (0ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO [__EFMigrationsHistory] ([MigrationId], [ProductVersion])
+VALUES (N'20260401235755_ConfigureProdutoPrecoPrecision', N'8.0.0');
+2026-04-10 13:36:36.956 -03:00 [INF] Now listening on: http://localhost:5001
+2026-04-10 13:36:36.959 -03:00 [INF] Application started. Press Ctrl+C to shut down.
+2026-04-10 13:36:36.960 -03:00 [INF] Hosting environment: Development
+2026-04-10 13:36:36.961 -03:00 [INF] Content root path: C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Api
+2026-04-10 13:36:57.825 -03:00 [INF] Request starting HTTP/1.1 GET http://localhost:5001/ - null null
+2026-04-10 13:36:57.851 -03:00 [WRN] Failed to determine the https port for redirect.
+2026-04-10 13:36:57.863 -03:00 [INF] Request finished HTTP/1.1 GET http://localhost:5001/ - 404 0 null 39.3835ms
+2026-04-10 13:36:57.870 -03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5001/, Response status code: 404

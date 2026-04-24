@@ -29,7 +29,7 @@ public class ProdutoController : ControllerBase
         return Ok(response);
     }
 
-    // ✅ Corrigido: long -> Guid
+  
     [HttpGet("{id:guid}")]
     public async Task<IActionResult> GetById([FromRoute] Guid id)
     {
@@ -41,7 +41,6 @@ public class ProdutoController : ControllerBase
         return Ok(response);
     }
 
-    // ✅ Corrigido: long -> Guid
     [HttpPut("{id:guid}")]
     public async Task<IActionResult> Update(
         [FromRoute] Guid id,
@@ -55,7 +54,7 @@ public class ProdutoController : ControllerBase
         return Ok(response);
     }
 
-    // ✅ Corrigido: long -> Guid
+   
     [HttpDelete("{id:guid}")]
     public async Task<IActionResult> Delete([FromRoute] Guid id)
     {

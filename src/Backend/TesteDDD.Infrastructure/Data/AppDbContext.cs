@@ -14,6 +14,7 @@ public class AppDbContext : DbContext
     public DbSet<Cliente> Clientes { get; set; }
     public DbSet<Vendas> Vendas { get; set; }
     public DbSet<ItemVendas> ItensVendas { get; set; }
+    public DbSet<NotaFiscal> NotasFiscais { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -31,6 +32,16 @@ public class AppDbContext : DbContext
             .HasMany(v => v.Itens)
             .WithOne()
             .OnDelete(DeleteBehavior.Cascade);
+
+        modelBuilder.Entity<NotaFiscal>()
+            .HasOne(nf => nf.Vendas)
+            .WithMany()
+            .HasForeignKey(nf => nf.VendasId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        modelBuilder.Entity<NotaFiscal>()
+            .Property(nf => nf.Status)
+            .HasConversion<int>();
 
         base.OnModelCreating(modelBuilder);
     }

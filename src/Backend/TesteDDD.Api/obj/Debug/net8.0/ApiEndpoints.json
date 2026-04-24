@@ -158,6 +158,85 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "TesteDDD.Api.Controllers.ItemVendasController",
+    "Method": "Create",
+    "RelativePath": "api/ItemVendas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "TesteDDD.Communication.Requests.RequestItemVendasJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TesteDDD.Api.Controllers.ItemVendasController",
+    "Method": "GetAll",
+    "RelativePath": "api/ItemVendas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TesteDDD.Api.Controllers.ItemVendasController",
+    "Method": "GetById",
+    "RelativePath": "api/ItemVendas/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TesteDDD.Api.Controllers.ItemVendasController",
+    "Method": "Update",
+    "RelativePath": "api/ItemVendas/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "TesteDDD.Communication.Requests.RequestItemVendasJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TesteDDD.Api.Controllers.ItemVendasController",
+    "Method": "Delete",
+    "RelativePath": "api/ItemVendas/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "TesteDDD.Api.Controllers.ProdutoController",
     "Method": "Create",
     "RelativePath": "api/Produto",
@@ -224,6 +303,85 @@
     "ContainingType": "TesteDDD.Api.Controllers.ProdutoController",
     "Method": "Delete",
     "RelativePath": "api/Produto/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TesteDDD.Api.Controllers.VendasController",
+    "Method": "Create",
+    "RelativePath": "api/Vendas",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "TesteDDD.Communication.Requests.RequestVendasJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TesteDDD.Api.Controllers.VendasController",
+    "Method": "GetAll",
+    "RelativePath": "api/Vendas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TesteDDD.Api.Controllers.VendasController",
+    "Method": "GetById",
+    "RelativePath": "api/Vendas/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TesteDDD.Api.Controllers.VendasController",
+    "Method": "Update",
+    "RelativePath": "api/Vendas/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "TesteDDD.Communication.Requests.RequestVendasJson",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "TesteDDD.Api.Controllers.VendasController",
+    "Method": "Delete",
+    "RelativePath": "api/Vendas/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
