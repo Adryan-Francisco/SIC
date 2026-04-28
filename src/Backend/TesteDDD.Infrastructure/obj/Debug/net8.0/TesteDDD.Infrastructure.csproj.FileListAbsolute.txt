@@ -1,47 +1,56 @@
-C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.csproj.AssemblyReference.cache
-C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.AssemblyInfo.cs
-C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Infrastructure.deps.json
-C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Infrastructure.dll
-C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Infrastructure.pdb
-C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Domain.dll
-C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Domain.pdb
-C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.B39FDB01.Up2Date
-C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.dll
-C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\refint\TesteDDD.Infrastructure.dll
-C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.pdb
-C:\Users\Maciel\Desktop\Front end\Adryan\TesteDDD\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\ref\TesteDDD.Infrastructure.dll
-C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.csproj.AssemblyReference.cache
-C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.AssemblyInfo.cs
-C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.sourcelink.json
-C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.dll
-C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\refint\TesteDDD.Infrastructure.dll
-C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.pdb
-C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Infrastructure.deps.json
-C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Infrastructure.dll
-C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Infrastructure.pdb
-C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Domain.dll
-C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Domain.pdb
-C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.B39FDB01.Up2Date
-C:\Users\Aluno\Desktop\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\ref\TesteDDD.Infrastructure.dll
-C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Infrastructure.deps.json
-C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Infrastructure.dll
-C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Infrastructure.pdb
-C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Domain.dll
-C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Infrastructure\bin\Debug\net8.0\TesteDDD.Domain.pdb
-C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.csproj.AssemblyReference.cache
-C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.AssemblyInfoInputs.cache
-C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.AssemblyInfo.cs
-C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.csproj.CoreCompileInputs.cache
-C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.sourcelink.json
-C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.B39FDB01.Up2Date
-C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.dll
-C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\refint\TesteDDD.Infrastructure.dll
-C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\TesteDDD.Infrastructure.pdb
-C:\Users\adrya\Documents\Projetos\SIC\src\Backend\TesteDDD.Infrastructure\obj\Debug\net8.0\ref\TesteDDD.Infrastructure.dll
+C:/Users/Maciel/Desktop/Front end/Adryan/TesteDDD/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.csproj.AssemblyReference.cache
+C:/Users/Maciel/Desktop/Front end/Adryan/TesteDDD/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Maciel/Desktop/Front end/Adryan/TesteDDD/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.AssemblyInfoInputs.cache
+C:/Users/Maciel/Desktop/Front end/Adryan/TesteDDD/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.AssemblyInfo.cs
+C:/Users/Maciel/Desktop/Front end/Adryan/TesteDDD/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.csproj.CoreCompileInputs.cache
+C:/Users/Maciel/Desktop/Front end/Adryan/TesteDDD/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Infrastructure.deps.json
+C:/Users/Maciel/Desktop/Front end/Adryan/TesteDDD/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Infrastructure.dll
+C:/Users/Maciel/Desktop/Front end/Adryan/TesteDDD/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Infrastructure.pdb
+C:/Users/Maciel/Desktop/Front end/Adryan/TesteDDD/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Domain.dll
+C:/Users/Maciel/Desktop/Front end/Adryan/TesteDDD/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Domain.pdb
+C:/Users/Maciel/Desktop/Front end/Adryan/TesteDDD/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.B39FDB01.Up2Date
+C:/Users/Maciel/Desktop/Front end/Adryan/TesteDDD/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.dll
+C:/Users/Maciel/Desktop/Front end/Adryan/TesteDDD/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/refint/TesteDDD.Infrastructure.dll
+C:/Users/Maciel/Desktop/Front end/Adryan/TesteDDD/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.pdb
+C:/Users/Maciel/Desktop/Front end/Adryan/TesteDDD/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/ref/TesteDDD.Infrastructure.dll
+C:/Users/Aluno/Desktop/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.csproj.AssemblyReference.cache
+C:/Users/Aluno/Desktop/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/Aluno/Desktop/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.AssemblyInfoInputs.cache
+C:/Users/Aluno/Desktop/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.AssemblyInfo.cs
+C:/Users/Aluno/Desktop/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.csproj.CoreCompileInputs.cache
+C:/Users/Aluno/Desktop/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.sourcelink.json
+C:/Users/Aluno/Desktop/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.dll
+C:/Users/Aluno/Desktop/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/refint/TesteDDD.Infrastructure.dll
+C:/Users/Aluno/Desktop/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.pdb
+C:/Users/Aluno/Desktop/SIC/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Infrastructure.deps.json
+C:/Users/Aluno/Desktop/SIC/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Infrastructure.dll
+C:/Users/Aluno/Desktop/SIC/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Infrastructure.pdb
+C:/Users/Aluno/Desktop/SIC/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Domain.dll
+C:/Users/Aluno/Desktop/SIC/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Domain.pdb
+C:/Users/Aluno/Desktop/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.B39FDB01.Up2Date
+C:/Users/Aluno/Desktop/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/ref/TesteDDD.Infrastructure.dll
+C:/Users/adrya/Documents/Projetos/SIC/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Infrastructure.deps.json
+C:/Users/adrya/Documents/Projetos/SIC/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Infrastructure.dll
+C:/Users/adrya/Documents/Projetos/SIC/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Infrastructure.pdb
+C:/Users/adrya/Documents/Projetos/SIC/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Domain.dll
+C:/Users/adrya/Documents/Projetos/SIC/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Domain.pdb
+C:/Users/adrya/Documents/Projetos/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.csproj.AssemblyReference.cache
+C:/Users/adrya/Documents/Projetos/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+C:/Users/adrya/Documents/Projetos/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.AssemblyInfoInputs.cache
+C:/Users/adrya/Documents/Projetos/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.AssemblyInfo.cs
+C:/Users/adrya/Documents/Projetos/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.csproj.CoreCompileInputs.cache
+C:/Users/adrya/Documents/Projetos/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.sourcelink.json
+C:/Users/adrya/Documents/Projetos/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.B39FDB01.Up2Date
+C:/Users/adrya/Documents/Projetos/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.dll
+C:/Users/adrya/Documents/Projetos/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/refint/TesteDDD.Infrastructure.dll
+C:/Users/adrya/Documents/Projetos/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.pdb
+C:/Users/adrya/Documents/Projetos/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/ref/TesteDDD.Infrastructure.dll
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.csproj.AssemblyReference.cache
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.AssemblyInfoInputs.cache
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.AssemblyInfo.cs
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.csproj.CoreCompileInputs.cache
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.sourcelink.json
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.dll
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/refint/TesteDDD.Infrastructure.dll
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.pdb
