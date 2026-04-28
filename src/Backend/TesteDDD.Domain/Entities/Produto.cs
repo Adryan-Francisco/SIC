@@ -32,15 +32,18 @@ namespace TesteDDD.Domain.Entities
             CategoriaId = categoriaId;
         }
 
-        public void Update(string nome, decimal preco)
+        public void Update(string nome, decimal preco, Guid categoriaId)
         {
             if (string.IsNullOrWhiteSpace(nome))
                 throw new ArgumentException("Nome é obrigatório", nameof(nome));
             if (preco <= 0)
                 throw new ArgumentException("Preço deve ser maior que zero", nameof(preco));
+            if (categoriaId == Guid.Empty)
+                throw new ArgumentException("CategoriaId é obrigatório", nameof(categoriaId));
 
             Nome = nome;
             Preco = preco;
+            CategoriaId = categoriaId;
         }
 
         public void DefinirCategoria(Categoria categoria)

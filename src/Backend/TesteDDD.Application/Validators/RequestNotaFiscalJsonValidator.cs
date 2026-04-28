@@ -11,6 +11,10 @@ public class RequestEmitirNotaFiscalJsonValidator : AbstractValidator<RequestEmi
             .NotEmpty()
             .WithMessage("VendasId é obrigatório.");
 
+        RuleFor(x => x.ClienteId)
+            .NotEmpty()
+            .WithMessage("ClienteId é obrigatório.");
+
         RuleFor(x => x.Serie)
             .GreaterThan(0)
             .WithMessage("Série deve ser maior que zero.");

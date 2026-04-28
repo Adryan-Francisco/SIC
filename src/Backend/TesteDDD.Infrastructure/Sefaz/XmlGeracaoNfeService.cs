@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Logging;
 using System.Xml.Linq;
 using TesteDDD.Domain.Entities;
 
@@ -152,7 +153,7 @@ public class XmlGeracaoNfeService : IXmlGeracaoNfeService
         );
     }
 
-    private XElement GerarDet(List<ItemVendas> itens)
+    private IEnumerable<XElement> GerarDet(List<ItemVendas> itens)
     {
         var detElements = new List<XElement>();
         int nItem = 1;
@@ -164,7 +165,6 @@ public class XmlGeracaoNfeService : IXmlGeracaoNfeService
                 new XElement("prod",
                     new XElement("CProd", item.ProdutoId.ToString("N").Substring(0, 16)), // Máximo 16 caracteres
                     new XElement("GTIN", ""),
-                    new XElement("indTot", "1"),
                     new XElement("xProd", item.Produto?.Nome ?? "Produto"),
                     new XElement("NCM", "12345678"), // TODO: Obter do produto
                     new XElement("CEST", "123456"), // TODO: Tornar configurável
@@ -221,7 +221,7 @@ public class XmlGeracaoNfeService : IXmlGeracaoNfeService
             nItem++;
         }
 
-        return new XElement(detElements);
+        return detElements;
     }
 
     private XElement GerarTotal(Vendas venda)
@@ -330,33 +330,33 @@ public class XmlGeracaoNfeService : IXmlGeracaoNfeService
     {
         return uf.ToUpper() switch
         {
-            "AC" => "04",
-            "AL" => "17",
+            "AC" => "12",
+            "AL" => "27",
             "AP" => "16",
-            "AM" => "03",
-            "BA" => "05",
-            "CE" => "07",
-            "DF" => "26",
-            "ES" => "14",
-            "GO" => "10",
-            "MA" => "11",
-            "MT" => "28",
-            "MS" => "10",
+            "AM" => "13",
+            "BA" => "29",
+            "CE" => "23",
+            "DF" => "53",
+            "ES" => "32",
+            "GO" => "52",
+            "MA" => "21",
+            "MT" => "51",
+            "MS" => "50",
             "MG" => "31",
             "PA" => "15",
-            "PB" => "21",
+            "PB" => "25",
             "PR" => "41",
-            "PE" => "08",
-            "PI" => "16",
+            "PE" => "26",
+            "PI" => "22",
             "RJ" => "33",
             "RN" => "24",
             "RS" => "43",
-            "RO" => "23",
-            "RR" => "24",
-            "SC" => "24",
+            "RO" => "11",
+            "RR" => "14",
+            "SC" => "42",
             "SP" => "35",
             "SE" => "28",
-            "TO" => "29",
+            "TO" => "17",
             _ => throw new InvalidOperationException($"UF não reconhecido: {uf}")
         };
     }

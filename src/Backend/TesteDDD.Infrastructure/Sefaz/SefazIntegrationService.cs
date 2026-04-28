@@ -1,3 +1,4 @@
+using Microsoft.Extensions.Logging;
 using System.Text;
 using System.Xml.Linq;
 
@@ -251,12 +252,12 @@ public class SefazIntegrationService : ISefazIntegrationService
 
     private string GenerarProtocolo()
     {
-        return DateTime.UtcNow.ToString("yyyyMMddHHmmss") + new Random().Next(100000, 999999);
+        return DateTime.UtcNow.ToString("yyyyMMddHHmmss") + Random.Shared.Next(100000, 999999);
     }
 
     private string GenerarNsu()
     {
-        return new Random().Next(100000000, 999999999).ToString();
+        return Random.Shared.Next(100000000, 999999999).ToString();
     }
 
     private string GerarXmlCancelamento(string chaveAcesso, string justificativa)

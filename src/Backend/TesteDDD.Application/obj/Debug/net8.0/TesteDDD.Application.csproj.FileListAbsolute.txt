@@ -60,3 +60,14 @@ C:/Users/adrya/Documents/Projetos/SIC/src/Backend/TesteDDD.Application/obj/Debug
 /home/runner/work/SIC/SIC/src/Backend/TesteDDD.Application/obj/Debug/net8.0/TesteDDD.Application.dll
 /home/runner/work/SIC/SIC/src/Backend/TesteDDD.Application/obj/Debug/net8.0/refint/TesteDDD.Application.dll
 /home/runner/work/SIC/SIC/src/Backend/TesteDDD.Application/obj/Debug/net8.0/TesteDDD.Application.pdb
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Application/bin/Debug/net8.0/TesteDDD.Application.deps.json
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Application/bin/Debug/net8.0/TesteDDD.Application.dll
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Application/bin/Debug/net8.0/TesteDDD.Application.pdb
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Application/bin/Debug/net8.0/TesteDDD.Communication.dll
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Application/bin/Debug/net8.0/TesteDDD.Domain.dll
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Application/bin/Debug/net8.0/TesteDDD.Infrastructure.dll
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Application/bin/Debug/net8.0/TesteDDD.Communication.pdb
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Application/bin/Debug/net8.0/TesteDDD.Domain.pdb
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Application/bin/Debug/net8.0/TesteDDD.Infrastructure.pdb
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Application/obj/Debug/net8.0/TesteDDD.1881301F.Up2Date
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Application/obj/Debug/net8.0/ref/TesteDDD.Application.dll

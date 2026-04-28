@@ -5,7 +5,6 @@ namespace TesteDDD.Communication.Requests
     public class RequestCategoriaJson
     {
         [Required(ErrorMessage = "Nome é obrigatório.")]
-        [MinLength(3, ErrorMessage = "Nome deve ter no mínimo 3 caracteres.")]
         [MaxLength(120, ErrorMessage = "Nome deve ter no máximo 120 caracteres.")]
         public string Name { get; set; } = string.Empty;
 

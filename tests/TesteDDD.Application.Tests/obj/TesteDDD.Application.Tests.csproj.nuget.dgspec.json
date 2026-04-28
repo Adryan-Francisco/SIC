@@ -29,6 +29,9 @@
               "/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Domain/TesteDDD.Domain.csproj": {
                 "projectPath": "/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Domain/TesteDDD.Domain.csproj"
               },
+              "/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/TesteDDD.Infrastructure.csproj": {
+                "projectPath": "/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/TesteDDD.Infrastructure.csproj"
+              },
               "/home/runner/work/SIC/SIC/src/Shared/TesteDDD.Communication/TesteDDD.Communication.csproj": {
                 "projectPath": "/home/runner/work/SIC/SIC/src/Shared/TesteDDD.Communication/TesteDDD.Communication.csproj"
               }
@@ -62,6 +65,10 @@
             "FluentValidation.DependencyInjectionExtensions": {
               "target": "Package",
               "version": "[12.1.1, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
             },
             "Serilog": {
               "target": "Package",
@@ -202,6 +209,14 @@
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.0, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "System.Security.Cryptography.Xml": {
+              "target": "Package",
+              "version": "[8.0.3, )"
             }
           },
           "imports": [

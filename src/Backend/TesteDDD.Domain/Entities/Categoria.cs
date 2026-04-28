@@ -33,6 +33,12 @@ namespace TesteDDD.Domain.Entities
 
         public void Update(string nome, string descricao)
         {
+            if (string.IsNullOrWhiteSpace(nome))
+                throw new ArgumentException("Nome é obrigatório", nameof(nome));
+
+            if (string.IsNullOrWhiteSpace(descricao))
+                throw new ArgumentException("Descrição é obrigatória", nameof(descricao));
+
             Nome = nome;
             Descricao = descricao;
         }

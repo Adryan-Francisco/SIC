@@ -55,7 +55,7 @@ builder.Services.AddScoped<IClienteService, ClienteService>();
 builder.Services.AddScoped<IVendasRepository, VendasRepository>();
 builder.Services.AddScoped<IVendasService, VendasService>();
 
-builder.Services.AddScoped<IItemVendasRepository, ItemVendasRepository>();
+builder.Services.AddScoped<IItemVendaRepository, ItemVendasRepository>();
 builder.Services.AddScoped<IItemVendasService, ItemVendasService>();
 
 builder.Services.AddScoped<INotaFiscalRepository, NotaFiscalRepository>();

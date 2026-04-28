@@ -6,8 +6,10 @@ using Moq;
 using Microsoft.Extensions.Logging;
 using TesteDDD.Domain.Entities;
 using TesteDDD.Domain.Repositories;
+using TesteDDD.Application.Exceptions;
 using TesteDDD.Application.Services;
 using TesteDDD.Communication.Requests;
+using TesteDDD.Communication.Responses;
 using TesteDDD.Infrastructure.Sefaz;
 using AutoMapper;
 
@@ -18,7 +20,6 @@ public class NotaFiscalIntegrationTests
     private readonly Mock<INotaFiscalRepository> _notaFiscalRepositoryMock;
     private readonly Mock<IVendasRepository> _vendasRepositoryMock;
     private readonly Mock<IClienteRepository> _clienteRepositoryMock;
-    private readonly Mock<IItemVendasRepository> _itemVendasRepositoryMock;
     private readonly Mock<ISefazIntegrationService> _sefazServiceMock;
     private readonly Mock<IXmlGeracaoNfeService> _xmlGeracaoServiceMock;
     private readonly Mock<IMapper> _mapperMock;
@@ -31,7 +32,6 @@ public class NotaFiscalIntegrationTests
         _notaFiscalRepositoryMock = new Mock<INotaFiscalRepository>();
         _vendasRepositoryMock = new Mock<IVendasRepository>();
         _clienteRepositoryMock = new Mock<IClienteRepository>();
-        _itemVendasRepositoryMock = new Mock<IItemVendasRepository>();
         _sefazServiceMock = new Mock<ISefazIntegrationService>();
         _xmlGeracaoServiceMock = new Mock<IXmlGeracaoNfeService>();
         _mapperMock = new Mock<IMapper>();
@@ -50,7 +50,6 @@ public class NotaFiscalIntegrationTests
             _notaFiscalRepositoryMock.Object,
             _vendasRepositoryMock.Object,
             _clienteRepositoryMock.Object,
-            _itemVendasRepositoryMock.Object,
             _sefazServiceMock.Object,
             _xmlGeracaoServiceMock.Object,
             _sefazSettings,
@@ -70,6 +69,7 @@ public class NotaFiscalIntegrationTests
         var request = new RequestEmitirNotaFiscalJson
         {
             VendasId = vendaId,
+            ClienteId = clienteId,
             Serie = 1,
             Numero = 100
         };
@@ -86,14 +86,14 @@ public class NotaFiscalIntegrationTests
         notaFiscalEsperada.AtualizarChaveAcesso("35260401123456789012345678901234567890123");
         notaFiscalEsperada.MarcarComoAutorizada("2026040100012345", "<xml>autorizado</xml>");
 
-        _vendasRepositoryMock.Setup(r => r.ObterPorIdAsync(vendaId))
+        _vendasRepositoryMock.Setup(r => r.GetByIdAsync(vendaId))
             .ReturnsAsync(venda);
 
-        _clienteRepositoryMock.Setup(r => r.ObterPorIdAsync(It.IsAny<Guid>()))
+        _clienteRepositoryMock.Setup(r => r.GetByIdAsync(clienteId))
             .ReturnsAsync(cliente);
 
         _notaFiscalRepositoryMock.Setup(r => r.ObterPorVendasIdAsync(vendaId))
-            .ReturnsAsync((NotaFiscal)null);
+            .ReturnsAsync((NotaFiscal?)null);
 
         _xmlGeracaoServiceMock.Setup(s => s.GerarXmlNFe(It.IsAny<NotaFiscal>(), It.IsAny<Vendas>(), 
             It.IsAny<Cliente>(), It.IsAny<List<ItemVendas>>(), It.IsAny<string>()))
@@ -141,15 +141,17 @@ public class NotaFiscalIntegrationTests
     {
         // Arrange
         var vendaId = Guid.NewGuid();
+        var clienteId = Guid.NewGuid();
         var request = new RequestEmitirNotaFiscalJson
         {
             VendasId = vendaId,
+            ClienteId = clienteId,
             Serie = 1,
             Numero = 100
         };
 
-        _vendasRepositoryMock.Setup(r => r.ObterPorIdAsync(vendaId))
-            .ReturnsAsync((Vendas)null);
+        _vendasRepositoryMock.Setup(r => r.GetByIdAsync(vendaId))
+            .ReturnsAsync((Vendas?)null);
 
         // Act & Assert
         await Assert.ThrowsAsync<NotFoundException>(() => _notaFiscalService.EmitirAsync(request));

@@ -35,7 +35,7 @@ public class ClienteController : ControllerBase
         var response = await _clienteService.GetByIdAsync(id);
             
         if (response is null)
-            return NotFound(new { Message = $"Cliente com ID {id} não encontrada." });
+            return NotFound(new { Message = $"Cliente com ID {id} não encontrado." });
 
         return Ok(response);
     }
@@ -48,7 +48,7 @@ public class ClienteController : ControllerBase
         var response = await _clienteService.UpdateAsync(id, request);
 
         if (response is null)
-            return NotFound(new { Message = $"Cliente com ID {id} não encontrada." });
+            return NotFound(new { Message = $"Cliente com ID {id} não encontrado." });
 
         return Ok(response);
     }
@@ -59,7 +59,7 @@ public class ClienteController : ControllerBase
         var deleted = await _clienteService.DeleteAsync(id);
 
         if (!deleted)
-            return NotFound(new { Message = $"Cliente com ID {id} não encontrada." });
+            return NotFound(new { Message = $"Cliente com ID {id} não encontrado." });
 
         return NoContent();
     }

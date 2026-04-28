@@ -97,7 +97,7 @@ public class ProdutoService : IProdutoService
             throw new BusinessRuleException("CATEGORIA_NAO_ENCONTRADA", $"Categoria com ID {request.CategoriaId} não encontrada.");
         }
 
-        produto.Update(request.Nome, request.Preco);
+        produto.Update(request.Nome, request.Preco, request.CategoriaId);
 
         await _produtoRepository.UpdateAsync(produto);
 

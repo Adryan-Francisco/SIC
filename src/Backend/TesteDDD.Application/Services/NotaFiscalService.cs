@@ -1,4 +1,5 @@
 using AutoMapper;
+using Microsoft.Extensions.Logging;
 using TesteDDD.Application.Exceptions;
 using TesteDDD.Communication.Requests;
 using TesteDDD.Communication.Responses;
@@ -22,7 +23,6 @@ public class NotaFiscalService : INotaFiscalService
     private readonly INotaFiscalRepository _notaFiscalRepository;
     private readonly IVendasRepository _vendasRepository;
     private readonly IClienteRepository _clienteRepository;
-    private readonly IItemVendasRepository _itemVendasRepository;
     private readonly ISefazIntegrationService _sefazService;
     private readonly IXmlGeracaoNfeService _xmlGeracaoService;
     private readonly SefazIntegrationSettings _sefazSettings;
@@ -33,7 +33,6 @@ public class NotaFiscalService : INotaFiscalService
         INotaFiscalRepository notaFiscalRepository,
         IVendasRepository vendasRepository,
         IClienteRepository clienteRepository,
-        IItemVendasRepository itemVendasRepository,
         ISefazIntegrationService sefazService,
         IXmlGeracaoNfeService xmlGeracaoService,
         SefazIntegrationSettings sefazSettings,
@@ -43,7 +42,6 @@ public class NotaFiscalService : INotaFiscalService
         _notaFiscalRepository = notaFiscalRepository ?? throw new ArgumentNullException(nameof(notaFiscalRepository));
         _vendasRepository = vendasRepository ?? throw new ArgumentNullException(nameof(vendasRepository));
         _clienteRepository = clienteRepository ?? throw new ArgumentNullException(nameof(clienteRepository));
-        _itemVendasRepository = itemVendasRepository ?? throw new ArgumentNullException(nameof(itemVendasRepository));
         _sefazService = sefazService ?? throw new ArgumentNullException(nameof(sefazService));
         _xmlGeracaoService = xmlGeracaoService ?? throw new ArgumentNullException(nameof(xmlGeracaoService));
         _sefazSettings = sefazSettings ?? throw new ArgumentNullException(nameof(sefazSettings));
@@ -61,11 +59,14 @@ public class NotaFiscalService : INotaFiscalService
             if (request.VendasId == Guid.Empty)
                 throw new InvalidOperationException("VendasId não pode estar vazio.");
 
+            if (request.ClienteId == Guid.Empty)
+                throw new InvalidOperationException("ClienteId não pode estar vazio.");
+
             if (request.Serie <= 0 || request.Numero <= 0)
                 throw new InvalidOperationException("Série e número devem ser maiores que zero.");
 
             // Verificar se a venda existe
-            var venda = await _vendasRepository.ObterPorIdAsync(request.VendasId);
+            var venda = await _vendasRepository.GetByIdAsync(request.VendasId);
             if (venda == null)
                 throw new NotFoundException("Venda não encontrada.");
 
@@ -75,7 +76,7 @@ public class NotaFiscalService : INotaFiscalService
                 throw new InvalidOperationException("Já existe uma nota fiscal para esta venda.");
 
             // Obter cliente e itens da venda
-            var cliente = await _clienteRepository.ObterPorIdAsync(Guid.NewGuid()); // TODO: Associar cliente à venda
+            var cliente = await _clienteRepository.GetByIdAsync(request.ClienteId);
             if (cliente == null)
                 throw new NotFoundException("Cliente não encontrado.");
 

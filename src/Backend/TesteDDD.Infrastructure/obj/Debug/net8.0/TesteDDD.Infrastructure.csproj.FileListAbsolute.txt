@@ -54,3 +54,10 @@ C:/Users/adrya/Documents/Projetos/SIC/src/Backend/TesteDDD.Infrastructure/obj/De
 /home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.dll
 /home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/refint/TesteDDD.Infrastructure.dll
 /home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.Infrastructure.pdb
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Infrastructure.deps.json
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Infrastructure.dll
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Infrastructure.pdb
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Domain.dll
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/bin/Debug/net8.0/TesteDDD.Domain.pdb
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/TesteDDD.B39FDB01.Up2Date
+/home/runner/work/SIC/SIC/src/Backend/TesteDDD.Infrastructure/obj/Debug/net8.0/ref/TesteDDD.Infrastructure.dll
