@@ -15,6 +15,10 @@ public class AppDbContext : DbContext
     public DbSet<Vendas> Vendas { get; set; }
     public DbSet<ItemVendas> ItensVendas { get; set; }
     public DbSet<NotaFiscal> NotasFiscais { get; set; }
+    public DbSet<Fornecedor> Fornecedores { get; set; }
+    public DbSet<OrdemServico> OrdensServico { get; set; }
+    public DbSet<Estoque> Estoques { get; set; }
+    public DbSet<MovimentacaoEstoque> MovimentacoesEstoque { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
@@ -27,6 +31,36 @@ public class AppDbContext : DbContext
             .WithMany(c => c.Produtos)
             .HasForeignKey(p => p.CategoriaId)
             .OnDelete(DeleteBehavior.Restrict);
+
+        modelBuilder.Entity<Produto>()
+            .HasOne(p => p.Fornecedor)
+            .WithMany(f => f.Produtos)
+            .HasForeignKey(p => p.FornecedorId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        modelBuilder.Entity<Fornecedor>()
+            .Property(f => f.Nome)
+            .HasMaxLength(150);
+
+        modelBuilder.Entity<Fornecedor>()
+            .Property(f => f.Documento)
+            .HasMaxLength(20);
+
+        modelBuilder.Entity<Fornecedor>()
+            .Property(f => f.Email)
+            .HasMaxLength(150);
+
+        modelBuilder.Entity<Fornecedor>()
+            .Property(f => f.Telefone)
+            .HasMaxLength(20);
+
+        modelBuilder.Entity<ItemVendas>()
+            .Property(iv => iv.PrecoUnitario)
+            .HasPrecision(18, 2);
+
+        modelBuilder.Entity<Vendas>()
+            .Property(v => v.ValorTotal)
+            .HasPrecision(18, 2);
 
         modelBuilder.Entity<Vendas>()
             .HasMany(v => v.Itens)
@@ -42,6 +76,50 @@ public class AppDbContext : DbContext
         modelBuilder.Entity<NotaFiscal>()
             .Property(nf => nf.Status)
             .HasConversion<int>();
+
+        modelBuilder.Entity<OrdemServico>()
+            .Property(os => os.ValorServico)
+            .HasPrecision(18, 2);
+
+        modelBuilder.Entity<OrdemServico>()
+            .Property(os => os.Status)
+            .HasConversion<int>();
+
+        modelBuilder.Entity<OrdemServico>()
+            .HasOne(os => os.Cliente)
+            .WithMany()
+            .HasForeignKey(os => os.ClienteId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        modelBuilder.Entity<OrdemServico>()
+            .HasOne(os => os.Produto)
+            .WithMany()
+            .HasForeignKey(os => os.ProdutoId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        modelBuilder.Entity<Estoque>()
+            .HasIndex(e => e.ProdutoId)
+            .IsUnique();
+
+        modelBuilder.Entity<Estoque>()
+            .HasOne(e => e.Produto)
+            .WithMany()
+            .HasForeignKey(e => e.ProdutoId)
+            .OnDelete(DeleteBehavior.Restrict);
+
+        modelBuilder.Entity<MovimentacaoEstoque>()
+            .Property(m => m.Tipo)
+            .HasConversion<int>();
+
+        modelBuilder.Entity<MovimentacaoEstoque>()
+            .Property(m => m.Observacao)
+            .HasMaxLength(250);
+
+        modelBuilder.Entity<MovimentacaoEstoque>()
+            .HasOne(m => m.Produto)
+            .WithMany()
+            .HasForeignKey(m => m.ProdutoId)
+            .OnDelete(DeleteBehavior.Restrict);
 
         base.OnModelCreating(modelBuilder);
     }

@@ -1,9 +1,9 @@
-﻿using AutoMapper;
+using AutoMapper;
+using TesteDDD.Application.Exceptions;
 using TesteDDD.Communication.Requests;
 using TesteDDD.Communication.Responses;
 using TesteDDD.Domain.Entities;
 using TesteDDD.Domain.Repositories;
-using TesteDDD.Application.Exceptions;
 
 namespace TesteDDD.Application.Services;
 
@@ -30,7 +30,6 @@ public class CategoriaService : ICategoriaService
     public async Task<ResponseCategoriaJson> CreateAsync(RequestCategoriaJson request)
     {
         var categoria = new Categoria(request.Name, request.Descricao);
-
         await _repository.AddAsync(categoria);
 
         return _mapper.Map<ResponseCategoriaJson>(categoria);
@@ -39,29 +38,22 @@ public class CategoriaService : ICategoriaService
     public async Task<IList<ResponseCategoriaJson>> GetAllAsync()
     {
         var categorias = await _repository.GetAllAsync();
-
         return _mapper.Map<IList<ResponseCategoriaJson>>(categorias);
     }
 
     public async Task<ResponseCategoriaJson?> GetByIdAsync(Guid id)
     {
         var categoria = await _repository.GetByIdAsync(id);
-
-        if (categoria == null)
-            return null;
-
-        return _mapper.Map<ResponseCategoriaJson>(categoria);
+        return categoria == null ? null : _mapper.Map<ResponseCategoriaJson>(categoria);
     }
 
     public async Task<ResponseCategoriaJson?> UpdateAsync(Guid id, RequestCategoriaJson request)
     {
         var categoria = await _repository.GetByIdAsync(id);
-
         if (categoria == null)
             return null;
 
         categoria.Update(request.Name, request.Descricao);
-
         await _repository.UpdateAsync(categoria);
 
         return _mapper.Map<ResponseCategoriaJson>(categoria);
@@ -70,7 +62,6 @@ public class CategoriaService : ICategoriaService
     public async Task<bool> DeleteAsync(Guid id)
     {
         var categoria = await _repository.GetByIdAsync(id);
-
         if (categoria == null)
             return false;
 

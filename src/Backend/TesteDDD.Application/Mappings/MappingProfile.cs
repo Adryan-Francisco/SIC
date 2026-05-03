@@ -1,5 +1,4 @@
 using AutoMapper;
-using TesteDDD.Communication.Requests;
 using TesteDDD.Communication.Responses;
 using TesteDDD.Domain.Entities;
 
@@ -9,24 +8,27 @@ public class MappingProfile : Profile
 {
     public MappingProfile()
     {
-        // Produto
-        CreateMap<Produto, ResponseProdutoJson>();
-        CreateMap<RequestProdutoJson, Produto>()
-            .ForMember(dest => dest.Id, opt => opt.Ignore())
-            .ForMember(dest => dest.Categoria, opt => opt.Ignore());
+        CreateMap<Produto, ResponseProdutoJson>()
+            .ForMember(dest => dest.FornecedorNome, opt => opt.MapFrom(src => src.Fornecedor.Nome));
 
-        // Categoria
         CreateMap<Categoria, ResponseCategoriaJson>();
-        CreateMap<RequestCategoriaJson, Categoria>()
-            .ForMember(dest => dest.Id, opt => opt.Ignore())
-            .ForMember(dest => dest.Produtos, opt => opt.Ignore());
-
-        // Cliente
         CreateMap<Cliente, ResponseClienteJson>();
-        CreateMap<RequestClienteJson, Cliente>()
-            .ForMember(dest => dest.Id, opt => opt.Ignore());
+        CreateMap<Fornecedor, ResponseFornecedorJson>();
 
-        // NotaFiscal
+        CreateMap<OrdemServico, ResponseOrdemServicoJson>()
+            .ForMember(dest => dest.ClienteNome, opt => opt.MapFrom(src => src.Cliente.Nome))
+            .ForMember(dest => dest.ProdutoNome, opt => opt.MapFrom(src => src.Produto.Nome))
+            .ForMember(dest => dest.Status, opt => opt.MapFrom(src => (int)src.Status))
+            .ForMember(dest => dest.StatusNome, opt => opt.MapFrom(src => src.Status.ToString()));
+
+        CreateMap<Estoque, ResponseEstoqueJson>()
+            .ForMember(dest => dest.ProdutoNome, opt => opt.MapFrom(src => src.Produto.Nome));
+
+        CreateMap<MovimentacaoEstoque, ResponseMovimentacaoEstoqueJson>()
+            .ForMember(dest => dest.ProdutoNome, opt => opt.MapFrom(src => src.Produto.Nome))
+            .ForMember(dest => dest.Tipo, opt => opt.MapFrom(src => (int)src.Tipo))
+            .ForMember(dest => dest.TipoNome, opt => opt.MapFrom(src => src.Tipo.ToString()));
+
         CreateMap<NotaFiscal, ResponseNotaFiscalJson>()
             .ForMember(dest => dest.Status, opt => opt.MapFrom(src => (int)src.Status))
             .ForMember(dest => dest.StatusNome, opt => opt.MapFrom(src => src.Status.ToString()));

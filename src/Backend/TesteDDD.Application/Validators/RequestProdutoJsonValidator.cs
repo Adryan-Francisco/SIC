@@ -9,18 +9,22 @@ public class RequestProdutoJsonValidator : AbstractValidator<RequestProdutoJson>
     {
         RuleFor(x => x.Nome)
             .NotEmpty()
-            .WithMessage("Nome do produto é obrigatório.")
+            .WithMessage("Nome do produto e obrigatorio.")
             .MinimumLength(3)
             .WithMessage("Nome do produto deve ter pelo menos 3 caracteres.")
             .MaximumLength(100)
-            .WithMessage("Nome do produto não pode ter mais de 100 caracteres.");
+            .WithMessage("Nome do produto nao pode ter mais de 100 caracteres.");
 
         RuleFor(x => x.Preco)
             .GreaterThan(0)
-            .WithMessage("Preço do produto deve ser maior que zero.");
+            .WithMessage("Preco do produto deve ser maior que zero.");
 
         RuleFor(x => x.CategoriaId)
             .NotEmpty()
-            .WithMessage("CategoriaId é obrigatório.");
+            .WithMessage("CategoriaId e obrigatorio.");
+
+        RuleFor(x => x.FornecedorId)
+            .NotEmpty()
+            .WithMessage("FornecedorId e obrigatorio.");
     }
 }

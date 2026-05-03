@@ -20,7 +20,9 @@ public class ProdutoEndpointsTests : IClassFixture<CustomWebApplicationFactory>
         var payload = new
         {
             nome = "",
-            preco = 0
+            preco = 0,
+            categoriaId = Guid.Empty,
+            fornecedorId = Guid.Empty
         };
 
         var response = await _client.PostAsJsonAsync("/api/Produto", payload);
@@ -39,11 +41,22 @@ public class ProdutoEndpointsTests : IClassFixture<CustomWebApplicationFactory>
         var categoria = await categoriaResponse.Content.ReadFromJsonAsync<JsonElement>();
         var categoriaId = categoria.GetProperty("id").GetGuid();
 
+        var fornecedorResponse = await _client.PostAsJsonAsync("/api/Fornecedor", new
+        {
+            nome = "Fornecedor Produto",
+            documento = "12345678000199",
+            email = "fornecedor@teste.com",
+            telefone = "11999999999"
+        });
+        var fornecedor = await fornecedorResponse.Content.ReadFromJsonAsync<JsonElement>();
+        var fornecedorId = fornecedor.GetProperty("id").GetGuid();
+
         var payload = new
         {
             nome = "Produto Integracao",
             preco = 10.5m,
-            categoriaId
+            categoriaId,
+            fornecedorId
         };
 
         var response = await _client.PostAsJsonAsync("/api/Produto", payload);
@@ -71,11 +84,22 @@ public class ProdutoEndpointsTests : IClassFixture<CustomWebApplicationFactory>
         var categoria = await categoriaResponse.Content.ReadFromJsonAsync<JsonElement>();
         var categoriaId = categoria.GetProperty("id").GetGuid();
 
+        var fornecedorResponse = await _client.PostAsJsonAsync("/api/Fornecedor", new
+        {
+            nome = "Fornecedor Teste",
+            documento = "12345678000199",
+            email = "fornecedor@teste.com",
+            telefone = "11999999999"
+        });
+        var fornecedor = await fornecedorResponse.Content.ReadFromJsonAsync<JsonElement>();
+        var fornecedorId = fornecedor.GetProperty("id").GetGuid();
+
         var payload = new
         {
             nome = "ab",
             preco = 10.5m,
-            categoriaId
+            categoriaId,
+            fornecedorId
         };
 
         var response = await _client.PostAsJsonAsync("/api/Produto", payload);

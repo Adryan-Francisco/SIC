@@ -1,9 +1,9 @@
-﻿using AutoMapper;
+using AutoMapper;
+using TesteDDD.Application.Exceptions;
 using TesteDDD.Communication.Requests;
 using TesteDDD.Communication.Responses;
 using TesteDDD.Domain.Entities;
 using TesteDDD.Domain.Repositories;
-using TesteDDD.Application.Exceptions;
 
 namespace TesteDDD.Application.Services
 {
@@ -30,7 +30,6 @@ namespace TesteDDD.Application.Services
         public async Task<ResponseClienteJson> CreateAsync(RequestClienteJson request)
         {
             var cliente = new Cliente(Guid.NewGuid(), request.Nome, request.Endereco, request.Cep);
-
             await _repository.AddAsync(cliente);
 
             return _mapper.Map<ResponseClienteJson>(cliente);
@@ -39,29 +38,22 @@ namespace TesteDDD.Application.Services
         public async Task<IList<ResponseClienteJson>> GetAllAsync()
         {
             var clientes = await _repository.GetAllAsync();
-
             return _mapper.Map<IList<ResponseClienteJson>>(clientes);
         }
 
         public async Task<ResponseClienteJson?> GetByIdAsync(Guid id)
         {
             var cliente = await _repository.GetByIdAsync(id);
-
-            if (cliente == null)
-                return null;
-
-            return _mapper.Map<ResponseClienteJson>(cliente);
+            return cliente == null ? null : _mapper.Map<ResponseClienteJson>(cliente);
         }
 
         public async Task<ResponseClienteJson?> UpdateAsync(Guid id, RequestClienteJson request)
         {
             var cliente = await _repository.GetByIdAsync(id);
-
             if (cliente == null)
                 return null;
 
             cliente.Update(request.Nome, request.Endereco, request.Cep);
-
             await _repository.UpdateAsync(cliente);
 
             return _mapper.Map<ResponseClienteJson>(cliente);
@@ -70,7 +62,6 @@ namespace TesteDDD.Application.Services
         public async Task<bool> DeleteAsync(Guid id)
         {
             var cliente = await _repository.GetByIdAsync(id);
-
             if (cliente == null)
                 return false;
 

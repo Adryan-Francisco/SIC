@@ -1,7 +1,7 @@
-using Xunit;
 using FluentValidation;
 using TesteDDD.Application.Validators;
 using TesteDDD.Communication.Requests;
+using Xunit;
 
 namespace TesteDDD.Application.Tests;
 
@@ -17,36 +17,32 @@ public class RequestProdutoJsonValidatorTests
     [Fact]
     public void Validate_WithValidData_ShouldSucceed()
     {
-        // Arrange
         var request = new RequestProdutoJson
         {
             Nome = "Produto Teste",
             Preco = 100m,
-            CategoriaId = Guid.NewGuid()
+            CategoriaId = Guid.NewGuid(),
+            FornecedorId = Guid.NewGuid()
         };
 
-        // Act
         var result = _validator.Validate(request);
 
-        // Assert
         Assert.True(result.IsValid);
     }
 
     [Fact]
     public void Validate_WithEmptyName_ShouldFail()
     {
-        // Arrange
         var request = new RequestProdutoJson
         {
             Nome = "",
             Preco = 100m,
-            CategoriaId = Guid.NewGuid()
+            CategoriaId = Guid.NewGuid(),
+            FornecedorId = Guid.NewGuid()
         };
 
-        // Act
         var result = _validator.Validate(request);
 
-        // Assert
         Assert.False(result.IsValid);
         Assert.Contains(result.Errors, e => e.PropertyName == "Nome");
     }
@@ -54,18 +50,16 @@ public class RequestProdutoJsonValidatorTests
     [Fact]
     public void Validate_WithShortName_ShouldFail()
     {
-        // Arrange
         var request = new RequestProdutoJson
         {
             Nome = "AB",
             Preco = 100m,
-            CategoriaId = Guid.NewGuid()
+            CategoriaId = Guid.NewGuid(),
+            FornecedorId = Guid.NewGuid()
         };
 
-        // Act
         var result = _validator.Validate(request);
 
-        // Assert
         Assert.False(result.IsValid);
         Assert.Contains(result.Errors, e => e.PropertyName == "Nome");
     }
@@ -73,18 +67,16 @@ public class RequestProdutoJsonValidatorTests
     [Fact]
     public void Validate_WithZeroPrice_ShouldFail()
     {
-        // Arrange
         var request = new RequestProdutoJson
         {
             Nome = "Produto Teste",
             Preco = 0,
-            CategoriaId = Guid.NewGuid()
+            CategoriaId = Guid.NewGuid(),
+            FornecedorId = Guid.NewGuid()
         };
 
-        // Act
         var result = _validator.Validate(request);
 
-        // Assert
         Assert.False(result.IsValid);
         Assert.Contains(result.Errors, e => e.PropertyName == "Preco");
     }
@@ -92,19 +84,34 @@ public class RequestProdutoJsonValidatorTests
     [Fact]
     public void Validate_WithEmptyCategoriaId_ShouldFail()
     {
-        // Arrange
         var request = new RequestProdutoJson
         {
             Nome = "Produto Teste",
             Preco = 100m,
-            CategoriaId = Guid.Empty
+            CategoriaId = Guid.Empty,
+            FornecedorId = Guid.NewGuid()
         };
 
-        // Act
         var result = _validator.Validate(request);
 
-        // Assert
         Assert.False(result.IsValid);
         Assert.Contains(result.Errors, e => e.PropertyName == "CategoriaId");
+    }
+
+    [Fact]
+    public void Validate_WithEmptyFornecedorId_ShouldFail()
+    {
+        var request = new RequestProdutoJson
+        {
+            Nome = "Produto Teste",
+            Preco = 100m,
+            CategoriaId = Guid.NewGuid(),
+            FornecedorId = Guid.Empty
+        };
+
+        var result = _validator.Validate(request);
+
+        Assert.False(result.IsValid);
+        Assert.Contains(result.Errors, e => e.PropertyName == "FornecedorId");
     }
 }

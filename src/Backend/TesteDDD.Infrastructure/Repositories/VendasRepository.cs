@@ -25,6 +25,7 @@ public class VendasRepository : IVendasRepository
         return await _dbContext.Vendas
             .Include(v => v.Itens)
             .ThenInclude(i => i.Produto)
+            .ThenInclude(p => p.Fornecedor)
             .AsNoTracking()
             .ToListAsync();
     }
@@ -34,6 +35,7 @@ public class VendasRepository : IVendasRepository
         return await _dbContext.Vendas
             .Include(v => v.Itens)
             .ThenInclude(i => i.Produto)
+            .ThenInclude(p => p.Fornecedor)
             .FirstOrDefaultAsync(v => v.Id == id);
     }
 
@@ -46,7 +48,7 @@ public class VendasRepository : IVendasRepository
     public async Task DeleteAsync(Guid id)
     {
         var venda = await GetByIdAsync(id);
-        if (venda is null)
+        if (venda == null)
             return;
 
         _dbContext.Vendas.Remove(venda);

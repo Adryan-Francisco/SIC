@@ -1,10 +1,10 @@
-﻿using AutoMapper;
+using AutoMapper;
 using Serilog;
+using TesteDDD.Application.Exceptions;
 using TesteDDD.Communication.Requests;
 using TesteDDD.Communication.Responses;
 using TesteDDD.Domain.Entities;
 using TesteDDD.Domain.Repositories;
-using TesteDDD.Application.Exceptions;
 
 namespace TesteDDD.Application.Services;
 
@@ -21,107 +21,88 @@ public class ProdutoService : IProdutoService
 {
     private readonly IProdutoRepository _produtoRepository;
     private readonly ICategoriaRepository _categoriaRepository;
+    private readonly IFornecedorRepository _fornecedorRepository;
+    private readonly IEstoqueRepository _estoqueRepository;
     private readonly IMapper _mapper;
 
-    public ProdutoService(IProdutoRepository produtoRepository, ICategoriaRepository categoriaRepository, IMapper mapper)
+    public ProdutoService(IProdutoRepository produtoRepository, ICategoriaRepository categoriaRepository, IFornecedorRepository fornecedorRepository, IEstoqueRepository estoqueRepository, IMapper mapper)
     {
         _produtoRepository = produtoRepository;
         _categoriaRepository = categoriaRepository;
+        _fornecedorRepository = fornecedorRepository;
+        _estoqueRepository = estoqueRepository;
         _mapper = mapper;
     }
 
     public async Task<ResponseProdutoJson> CreateAsync(RequestProdutoJson request)
     {
-        Log.Information("Iniciando criação de produto: {@Produto}", request);
+        Log.Information("Iniciando criacao de produto: {@Produto}", request);
+        Validate(request);
 
-        // Validar se categoria existe
-        var categoria = await _categoriaRepository.GetByIdAsync(request.CategoriaId);
-        if (categoria == null)
-        {
-            Log.Warning("Categoria não encontrada. CategoriaId: {CategoriaId}", request.CategoriaId);
-            throw new BusinessRuleException("CATEGORIA_NAO_ENCONTRADA", $"Categoria com ID {request.CategoriaId} não encontrada.");
-        }
+        await EnsureReferencesAsync(request.CategoriaId, request.FornecedorId);
 
-        var produto = new Produto(request.Nome, request.Preco, request.CategoriaId);
-
+        var produto = new Produto(request.Nome, request.Preco, request.CategoriaId, request.FornecedorId);
         await _produtoRepository.AddAsync(produto);
+
+        var estoque = new Estoque(produto.Id, 0, 0);
+        await _estoqueRepository.AddAsync(estoque);
 
         Log.Information("Produto criado com sucesso. ProdutoId: {ProdutoId}, Nome: {Nome}", produto.Id, produto.Nome);
 
-        return _mapper.Map<ResponseProdutoJson>(produto);
+        var saved = await _produtoRepository.GetByIdAsync(produto.Id) ?? produto;
+        return _mapper.Map<ResponseProdutoJson>(saved);
     }
 
     public async Task<IList<ResponseProdutoJson>> GetAllAsync()
     {
-        Log.Information("Obtendo todos os produtos");
-
         var products = await _produtoRepository.GetAllAsync();
-
-        Log.Information("Total de produtos obtidos: {ProductCount}", products.Count());
-
         return _mapper.Map<IList<ResponseProdutoJson>>(products);
     }
 
     public async Task<ResponseProdutoJson?> GetByIdAsync(Guid id)
     {
-        Log.Debug("Obtendo produto por ID. ProdutoId: {ProdutoId}", id);
-
         var produto = await _produtoRepository.GetByIdAsync(id);
-
-        if (produto == null)
-        {
-            Log.Warning("Produto não encontrado. ProdutoId: {ProdutoId}", id);
-            return null;
-        }
-
-        return _mapper.Map<ResponseProdutoJson>(produto);
+        return produto == null ? null : _mapper.Map<ResponseProdutoJson>(produto);
     }
 
     public async Task<ResponseProdutoJson?> UpdateAsync(Guid id, RequestProdutoJson request)
     {
-        Log.Information("Atualizando produto. ProdutoId: {ProdutoId}, {@ProdutoData}", id, request);
+        Validate(request);
 
         var produto = await _produtoRepository.GetByIdAsync(id);
-
         if (produto == null)
-        {
-            Log.Warning("Produto não encontrado para atualização. ProdutoId: {ProdutoId}", id);
             return null;
-        }
 
-        // Validar se categoria existe
-        var categoria = await _categoriaRepository.GetByIdAsync(request.CategoriaId);
-        if (categoria == null)
-        {
-            Log.Warning("Categoria não encontrada na atualização. CategoriaId: {CategoriaId}", request.CategoriaId);
-            throw new BusinessRuleException("CATEGORIA_NAO_ENCONTRADA", $"Categoria com ID {request.CategoriaId} não encontrada.");
-        }
+        await EnsureReferencesAsync(request.CategoriaId, request.FornecedorId);
 
-        produto.Update(request.Nome, request.Preco);
-
+        produto.Update(request.Nome, request.Preco, request.CategoriaId, request.FornecedorId);
         await _produtoRepository.UpdateAsync(produto);
-
-        Log.Information("Produto atualizado com sucesso. ProdutoId: {ProdutoId}", id);
 
         return _mapper.Map<ResponseProdutoJson>(produto);
     }
 
     public async Task<bool> DeleteAsync(Guid id)
     {
-        Log.Information("Deletando produto. ProdutoId: {ProdutoId}", id);
-
         var produto = await _produtoRepository.GetByIdAsync(id);
-
         if (produto == null)
-        {
-            Log.Warning("Produto não encontrado para deleção. ProdutoId: {ProdutoId}", id);
             return false;
-        }
 
         await _produtoRepository.DeleteAsync(id);
-
-        Log.Information("Produto deletado com sucesso. ProdutoId: {ProdutoId}", id);
-
         return true;
+    }
+
+    private async Task EnsureReferencesAsync(Guid categoriaId, Guid fornecedorId)
+    {
+        if (await _categoriaRepository.GetByIdAsync(categoriaId) == null)
+            throw new BusinessRuleException("CATEGORIA_NAO_ENCONTRADA", $"Categoria com ID {categoriaId} nao encontrada.");
+
+        if (await _fornecedorRepository.GetByIdAsync(fornecedorId) == null)
+            throw new BusinessRuleException("FORNECEDOR_NAO_ENCONTRADO", $"Fornecedor com ID {fornecedorId} nao encontrado.");
+    }
+
+    private static void Validate(RequestProdutoJson request)
+    {
+        if (!string.IsNullOrWhiteSpace(request.Nome) && request.Nome.Length < 3)
+            throw new BusinessRuleException("PRODUTO_NOME_CURTO", "Nome do produto deve ter pelo menos 3 caracteres.");
     }
 }
