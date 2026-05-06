@@ -9,24 +9,22 @@ public class RequestClienteJsonValidator : AbstractValidator<RequestClienteJson>
     {
         RuleFor(x => x.Nome)
             .NotEmpty()
-            .WithMessage("Nome do cliente é obrigatório.")
-            .MinimumLength(3)
-            .WithMessage("Nome do cliente deve ter pelo menos 3 caracteres.")
+            .WithMessage("Nome do cliente e obrigatorio.")
             .MaximumLength(100)
-            .WithMessage("Nome do cliente não pode ter mais de 100 caracteres.");
+            .WithMessage("Nome do cliente nao pode ter mais de 100 caracteres.");
 
         RuleFor(x => x.Endereco)
             .NotEmpty()
-            .WithMessage("Endereço do cliente é obrigatório.")
+            .WithMessage("Endereco do cliente e obrigatorio.")
             .MinimumLength(5)
-            .WithMessage("Endereço deve ter pelo menos 5 caracteres.")
+            .WithMessage("Endereco deve ter pelo menos 5 caracteres.")
             .MaximumLength(200)
-            .WithMessage("Endereço não pode ter mais de 200 caracteres.");
+            .WithMessage("Endereco nao pode ter mais de 200 caracteres.");
 
         RuleFor(x => x.Cep)
             .NotEmpty()
-            .WithMessage("CEP do cliente é obrigatório.")
-            .Matches(@"^\d{8,9}$")
-            .WithMessage("CEP deve conter apenas dígitos (8 ou 9 dígitos).");
+            .WithMessage("CEP do cliente e obrigatorio.")
+            .Matches(@"^(\d{8,9}|\d{5}-\d{3})$")
+            .WithMessage("CEP invalido. Use 12345-678, 12345678 ou 123456789.");
     }
 }

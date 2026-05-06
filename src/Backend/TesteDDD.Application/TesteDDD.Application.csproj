@@ -9,6 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Shared\TesteDDD.Communication\TesteDDD.Communication.csproj" />
     <ProjectReference Include="..\TesteDDD.Domain\TesteDDD.Domain.csproj" />
+    <ProjectReference Include="..\TesteDDD.Infrastructure\TesteDDD.Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>

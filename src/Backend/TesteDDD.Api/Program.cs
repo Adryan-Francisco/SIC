@@ -109,22 +109,29 @@ app.UseExceptionHandler(errorApp =>
     {
         var exception = context.Features.Get<IExceptionHandlerFeature>()?.Error;
 
-        var statusCode = exception is BusinessRuleException
-            ? StatusCodes.Status400BadRequest
-            : StatusCodes.Status500InternalServerError;
+        if (exception is BusinessRuleException businessRuleException)
+        {
+            context.Response.StatusCode = StatusCodes.Status400BadRequest;
+            await context.Response.WriteAsJsonAsync(new
+            {
+                status = StatusCodes.Status400BadRequest,
+                title = "Erro de regra de negocio.",
+                detail = businessRuleException.Message,
+                instance = context.Request.Path.Value,
+                code = businessRuleException.Code
+            });
+            return;
+        }
 
         var problemDetails = new ProblemDetails
         {
-            Status = statusCode,
-            Title = exception is BusinessRuleException ? "Erro de regra de negocio." : "Ocorreu um erro interno.",
-            Detail = app.Environment.IsDevelopment() || exception is BusinessRuleException ? exception?.Message : null,
+            Status = StatusCodes.Status500InternalServerError,
+            Title = "Ocorreu um erro interno.",
+            Detail = app.Environment.IsDevelopment() ? exception?.Message : null,
             Instance = context.Request.Path
         };
 
-        if (exception is BusinessRuleException businessRuleException)
-            problemDetails.Extensions["code"] = businessRuleException.Code;
-
-        context.Response.StatusCode = statusCode;
+        context.Response.StatusCode = StatusCodes.Status500InternalServerError;
         await context.Response.WriteAsJsonAsync(problemDetails);
     });
 });

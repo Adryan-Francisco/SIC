@@ -1,4 +1,5 @@
 using AutoMapper;
+using Microsoft.Extensions.Logging;
 using TesteDDD.Application.Exceptions;
 using TesteDDD.Communication.Requests;
 using TesteDDD.Communication.Responses;
@@ -22,7 +23,7 @@ public class NotaFiscalService : INotaFiscalService
     private readonly INotaFiscalRepository _notaFiscalRepository;
     private readonly IVendasRepository _vendasRepository;
     private readonly IClienteRepository _clienteRepository;
-    private readonly IItemVendasRepository _itemVendasRepository;
+    private readonly IItemVendaRepository _itemVendasRepository;
     private readonly ISefazIntegrationService _sefazService;
     private readonly IXmlGeracaoNfeService _xmlGeracaoService;
     private readonly SefazIntegrationSettings _sefazSettings;
@@ -33,7 +34,7 @@ public class NotaFiscalService : INotaFiscalService
         INotaFiscalRepository notaFiscalRepository,
         IVendasRepository vendasRepository,
         IClienteRepository clienteRepository,
-        IItemVendasRepository itemVendasRepository,
+        IItemVendaRepository itemVendasRepository,
         ISefazIntegrationService sefazService,
         IXmlGeracaoNfeService xmlGeracaoService,
         SefazIntegrationSettings sefazSettings,
@@ -57,25 +58,22 @@ public class NotaFiscalService : INotaFiscalService
         {
             _logger.LogInformation("Iniciando emissão de nota fiscal para venda: {VendasId}", request.VendasId);
 
-            // Validar requisição
             if (request.VendasId == Guid.Empty)
                 throw new InvalidOperationException("VendasId não pode estar vazio.");
 
             if (request.Serie <= 0 || request.Numero <= 0)
                 throw new InvalidOperationException("Série e número devem ser maiores que zero.");
 
-            // Verificar se a venda existe
-            var venda = await _vendasRepository.ObterPorIdAsync(request.VendasId);
+            var venda = await _vendasRepository.GetByIdAsync(request.VendasId);
             if (venda == null)
                 throw new NotFoundException("Venda não encontrada.");
 
-            // Verificar se já existe nota fiscal para esta venda
             var notaExistente = await _notaFiscalRepository.ObterPorVendasIdAsync(request.VendasId);
             if (notaExistente != null)
                 throw new InvalidOperationException("Já existe uma nota fiscal para esta venda.");
 
-            // Obter cliente e itens da venda
-            var cliente = await _clienteRepository.ObterPorIdAsync(Guid.NewGuid()); // TODO: Associar cliente à venda
+            // TODO: associar o cliente à venda no domínio; por enquanto usamos o primeiro cliente disponível.
+            var cliente = (await _clienteRepository.GetAllAsync()).FirstOrDefault();
             if (cliente == null)
                 throw new NotFoundException("Cliente não encontrado.");
 
@@ -83,14 +81,16 @@ public class NotaFiscalService : INotaFiscalService
             if (itens == null || itens.Count == 0)
                 throw new InvalidOperationException("Venda sem itens não pode ter nota fiscal emitida.");
 
-            // Criar nova nota fiscal
             var notaFiscal = new NotaFiscal(request.VendasId, request.Serie, request.Numero);
             notaFiscal.MarcarComoPendente();
 
-            // Gerar XML da nota fiscal conforme padrão ABNT
-            var xmlNota = _xmlGeracaoService.GerarXmlNFe(notaFiscal, venda, cliente, itens, _sefazSettings.CnpjEmitente ?? string.Empty);
+            var xmlNota = _xmlGeracaoService.GerarXmlNFe(
+                notaFiscal,
+                venda,
+                cliente,
+                itens,
+                _sefazSettings.CnpjEmitente ?? string.Empty);
 
-            // Autorizar no Sefaz (que irá assinar o XML internamente)
             var respostaAutorizacao = await _sefazService.AutorizarNotaAsync(xmlNota);
 
             if (respostaAutorizacao.Sucesso)
@@ -107,9 +107,7 @@ public class NotaFiscalService : INotaFiscalService
                 _logger.LogWarning("Falha ao autorizar nota fiscal: {Mensagem}", respostaAutorizacao.Mensagem);
             }
 
-            // Salvar no banco de dados
             await _notaFiscalRepository.AdicionarAsync(notaFiscal);
-
             return _mapper.Map<ResponseNotaFiscalJson>(notaFiscal);
         }
         catch (Exception ex)
@@ -139,12 +137,11 @@ public class NotaFiscalService : INotaFiscalService
             if (notaFiscal == null)
                 throw new NotFoundException("Nota fiscal não encontrada.");
 
-            // Se ainda está pendente, consultar no Sefaz
             if (notaFiscal.Status == NotaFiscalStatus.Pendente)
             {
                 var respostaConsulta = await _sefazService.ConsultarStatusAsync(notaFiscal.ChaveAcesso);
 
-                if (respostaConsulta.Sucesso && respostaConsulta.Status == "100") // 100 = Autorizada
+                if (respostaConsulta.Sucesso && respostaConsulta.Status == "100")
                 {
                     notaFiscal.MarcarComoAutorizada(respostaConsulta.Protocolo, string.Empty);
                     await _notaFiscalRepository.AtualizarAsync(notaFiscal);
@@ -174,7 +171,6 @@ public class NotaFiscalService : INotaFiscalService
             if (notaFiscal.Status != NotaFiscalStatus.Autorizada)
                 throw new InvalidOperationException("Apenas notas autorizadas podem ser canceladas.");
 
-            // Solicitar cancelamento no Sefaz
             var respostaCancelamento = await _sefazService.CancelarNotaAsync(notaFiscal.ChaveAcesso, request.Justificativa);
 
             if (respostaCancelamento.Sucesso)
@@ -205,8 +201,6 @@ public class NotaFiscalService : INotaFiscalService
 
     private string GerarUrlDanfe(string chaveAcesso)
     {
-        // TODO: Implementar geração de URL da DANFE com base no provedor Sefaz
-        // Exemplo usando Sefaz-SP: https://nfe.fazenda.sp.gov.br/danfeweb/consultar
         return $"https://nfe.fazenda.sp.gov.br/danfeweb/consultar?chNFe={chaveAcesso}";
     }
 }

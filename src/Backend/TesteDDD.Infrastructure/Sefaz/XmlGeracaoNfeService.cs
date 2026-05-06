@@ -1,4 +1,5 @@
 using System.Xml.Linq;
+using Microsoft.Extensions.Logging;
 using TesteDDD.Domain.Entities;
 
 namespace TesteDDD.Infrastructure.Sefaz;
@@ -152,7 +153,7 @@ public class XmlGeracaoNfeService : IXmlGeracaoNfeService
         );
     }
 
-    private XElement GerarDet(List<ItemVendas> itens)
+    private IEnumerable<XElement> GerarDet(List<ItemVendas> itens)
     {
         var detElements = new List<XElement>();
         int nItem = 1;
@@ -221,7 +222,7 @@ public class XmlGeracaoNfeService : IXmlGeracaoNfeService
             nItem++;
         }
 
-        return new XElement(detElements);
+        return detElements;
     }
 
     private XElement GerarTotal(Vendas venda)

@@ -29,6 +29,8 @@ public class CategoriaService : ICategoriaService
 
     public async Task<ResponseCategoriaJson> CreateAsync(RequestCategoriaJson request)
     {
+        ValidarNome(request.Name);
+
         var categoria = new Categoria(request.Name, request.Descricao);
         await _repository.AddAsync(categoria);
 
@@ -53,6 +55,7 @@ public class CategoriaService : ICategoriaService
         if (categoria == null)
             return null;
 
+        ValidarNome(request.Name);
         categoria.Update(request.Name, request.Descricao);
         await _repository.UpdateAsync(categoria);
 
@@ -67,5 +70,11 @@ public class CategoriaService : ICategoriaService
 
         await _repository.DeleteAsync(id);
         return true;
+    }
+
+    private static void ValidarNome(string nome)
+    {
+        if (!string.IsNullOrWhiteSpace(nome) && nome.Trim().Length < 3)
+            throw new BusinessRuleException("CATEGORIA_NOME_CURTO", "Nome da categoria deve ter pelo menos 3 caracteres.");
     }
 }

@@ -29,6 +29,8 @@ namespace TesteDDD.Application.Services
 
         public async Task<ResponseClienteJson> CreateAsync(RequestClienteJson request)
         {
+            ValidarNome(request.Nome);
+
             var cliente = new Cliente(Guid.NewGuid(), request.Nome, request.Endereco, request.Cep);
             await _repository.AddAsync(cliente);
 
@@ -53,6 +55,7 @@ namespace TesteDDD.Application.Services
             if (cliente == null)
                 return null;
 
+            ValidarNome(request.Nome);
             cliente.Update(request.Nome, request.Endereco, request.Cep);
             await _repository.UpdateAsync(cliente);
 
@@ -67,6 +70,12 @@ namespace TesteDDD.Application.Services
 
             await _repository.DeleteAsync(id);
             return true;
+        }
+
+        private static void ValidarNome(string nome)
+        {
+            if (!string.IsNullOrWhiteSpace(nome) && nome.Trim().Length < 3)
+                throw new BusinessRuleException("CLIENTE_NOME_CURTO", "Nome do cliente deve ter pelo menos 3 caracteres.");
         }
     }
 }

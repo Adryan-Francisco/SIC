@@ -1,5 +1,6 @@
 using System.Text;
 using System.Xml.Linq;
+using Microsoft.Extensions.Logging;
 
 namespace TesteDDD.Infrastructure.Sefaz;
 
